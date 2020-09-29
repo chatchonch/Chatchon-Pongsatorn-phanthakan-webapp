@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    background-color: #e8f0ed;
+}
+
+.topic {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 35vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a6933;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+.loginTab{
+    background-color: white;
+    width: 50vw;
+    height: 30vw;
+    margin: auto;
+    margin-top: 10vw;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: row;
+    
+    
+}
+
+.loginLeft{
+    background-color: #3a6933;
+    width: 20vw;
+    height: 30vw;
+    
+    
+    /* border-radius: 100px 0 0 100px;  */
+}
+
+.loginRight{
+    width: 30vw;
+    height: 30vw;
+    /* border-radius: 0px 100px 100px 0;  */
+    
+    display: flex ;
+    flex-direction: column;
+}
+
+.welcomeText{
+    margin-top: 10%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+form{
+    display: flex; 
+    flex-direction: column;
+}
+
+input[type=text], input[type=password]{
+width: 50%;
+font-size: 20px;
+
+padding: 10px;
+margin: auto;
+display: inline-block;
+margin-top: 10px;
+border: none;
+background: #f1f1f1;
+  
+  
+ 
+}
+label{
+    margin-left: 5vw;
+    font-size: 20px;
+}
+
+.buttonSubmit{
+    
+    width: 40%;
+    height: 7%;
+    border-radius: 15px;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: #FFA500;
+    
+    
+}
+
+button:hover {
+    opacity: 0.8;
+  }
+
+.signIn{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.anotherLogin{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+
+
+}
+
+.facebook{
+    width: 8%;
+    height: 8%;
+    margin: 20px;
+    margin-top: 50px;
+    
+    
+}
+.hospital{
+    width: 300px;
+    height: 300px;
+    margin-top: 35%;
+    margin-left: 10%;
+}

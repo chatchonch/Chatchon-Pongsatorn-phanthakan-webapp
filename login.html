@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="js/js.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li class="topic">ระบบนัดหน่วยบริการปฐมภูมิ มหาวิทยาลัยขอนแก่น</li>
+      <li style="float: right">
+        <a class="active" href="#English">English</a>
+      </li>
+    </ul>
+    <div class="loginTab">
+      <div class="loginLeft">
+        <img src="images/hospital.png" class="hospital" />
+      </div>
+      <div class="loginRight">
+        <p class="welcomeText">ยินดีต้อนรับ</p>
+        <form>
+          <label for="fname">อีเมลล์</label>
+          <input
+            type="text"
+            id="email"
+            name="Email"
+            placeholder="อีเมลล์ของคุณ..."
+          />
+          <br />
+          <label for="lname">รหัสผ่าน</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="รหัสผ่านของคุณ..."
+          />
+        </form>
+        <button
+          
+          type="submit"
+          class="buttonSubmit signIn"
+          onclick="alert('Welcome')"
+        >
+          เข้าสู่ระบบ
+        </button>
+        <div>
+          <div class="anotherLogin">
+            <img src="images/facebook.png" class="facebook" />
+            <img src="images/search.png" class="facebook" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
