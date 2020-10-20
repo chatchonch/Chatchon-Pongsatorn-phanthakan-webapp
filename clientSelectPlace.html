@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="js/js.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="topic">ระบบนัดหน่วยบริการปฐมภูมิ มหาวิทยาลัยขอนแก่น</li>
+        <li style="float: right">
+          <a class="active" href="#English">English</a>
+        </li>
+      </ul>
+    </div>
+    <div class="choosePlaceTag">
+      <div class="greenHead"><p class="textBook">จองคิวนัด</p></div>
+      <div class="flexDirectRow">
+        <div>
+          <img src="images/health-report.png" class="picRepoert" />
+        </div>
+        <div class="flexDirectColumn">
+          <div class="seperateInputandSelect">
+            <form>
+              <label class="labelChoosePlace">เลือกสถานบริการ:</label>
+              <select id="places" name="placelist" form="placeForm">
+                <option value="volvo">สถานบริการที่ 1</option>
+                <option value="saab">สถานบริการที่ 2</option>
+              </select>
+            </form>
+          </div>
+          <div class="inputPosition">
+            <form>
+              <label class="labelChoosePlace">ชื่อ:</label>
+              <input
+                type="text"
+                id="namePatient"
+                placeholder="ชื่อของคุณ..."
+                style="font-size: 1rem"
+              />
+            </form>
+            <div class="space"></div>
+            <form>
+              <label class="labelChoosePlace">สกุล:</label>
+              <input
+                type="text"
+                id="namePatient"
+                placeholder="นามสกุลของคุณ..."
+                style="font-size: 1rem"
+              />
+            </form>
+          </div>
+          <div class="inputPosition2">
+            <label class="labelChoosePlace">เลขบัตรประชาชน:</label>
+            <form>
+              <input
+                type="text"
+                id="ssd"
+                placeholder="เลขบัตรประชาชนของคุณ..."
+                style="font-size: 1rem"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="formSymtons"><div class="listSymton">อาการ</div></div>
+      <div>
+        <button class="acceptBut">ยืนยัน</button
+        ><button class="cancelBut">ยกเลิก</button>
+      </div>
+    </div>
+  </body>
+</html>
