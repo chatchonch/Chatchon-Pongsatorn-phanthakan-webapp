@@ -1,0 +1,379 @@
+body{
+    margin: 0;
+    background-color: #e8f0ed;
+}
+
+.topic {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1vw ;
+    text-decoration: none;
+    margin-left: 30vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a6933;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+
+
+.loginTab{
+    background-color: white;
+    width: 50vw;
+    height: 30vw;
+    margin: auto;
+    margin-top: 10vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: row;
+    
+    
+    
+}
+
+.loginLeft{
+    background-color: #3a6933;
+    width: 20vw;
+    height: 30vw;
+    
+    
+    /* border-radius: 100px 0 0 100px;  */
+}
+
+.loginRight{
+    width: 30vw;
+    height: 30vw;
+    /* border-radius: 0px 100px 100px 0;  */
+    
+    display: flex ;
+    flex-direction: column;
+}
+
+.welcomeText{
+    margin-top: 10%;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+form{
+    display: flex; 
+    flex-direction: column;
+}
+
+input[type=text], input[type=password]{
+width: 50%;
+font-size: 20px;
+
+padding: 10px;
+margin: auto;
+display: inline-block;
+margin-top: 10px;
+border: none;
+background: #f1f1f1;
+border-radius: 30vw;
+  
+ 
+}
+label{
+    margin-left: 3vw;
+    font-size: 1.2rem;
+}
+
+.buttonSubmit{
+    
+    width: 40%;
+    height: 7%;
+    border-radius: 15px;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: #FFA500;
+    
+    
+}
+
+button:hover {
+    opacity: 0.8;
+  }
+
+.signIn{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.anotherLogin{
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+
+
+}
+
+.facebook{
+    width: 8%;
+    height: 8%;
+    margin: 20px;
+    margin-top: 50px;
+    
+    
+}
+.hospital{
+    width: 15vw;
+    height: 15vw;
+    margin-top: 35%;
+    margin-left: 10%;
+}
+
+.choosePlaceTag{
+    background-color: white;
+    width: 50vw;
+    height: 80vw;
+    margin: auto;
+    margin-top: 10vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+}
+.greenHead{
+    background-color: #3a6933;
+    height: 5vw;
+    width: 50vw;
+    
+}
+
+.textBook{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1vw;
+    font-weight: bold;
+    color: honeydew;
+}
+
+.flexDirectRow{
+    display: flex ;
+    flex-direction: row;
+}
+
+.flexDirectColumn{
+    display: flex ;
+    flex-direction: column;
+}
+
+.seperateHead{
+    margin-top: 4vw;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+
+.seperateInputandSelect{
+    margin-top: 4vw;
+    margin-left: 6vw;
+}
+
+
+
+.inputPosition{
+    margin-top: 1vw;
+    margin-left: 6vw;
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+}
+.inputPosition2{
+    margin-top: 1vw;
+    margin-left: 6vw;
+   
+    
+}
+
+.seperateInputandSelectReport{
+    margin-top: 4vw;
+    margin-right: 4vw;
+}
+
+.inputPositionReport{
+    margin-top: 1vw;
+    margin-right: 4vw;
+    display: flex;
+    flex-direction: row;
+}
+.inputPositionReport2{
+    margin-top: 1vw;
+    margin-right: 4vw;
+}
+
+#places{
+    padding: 0.25vw;
+    width: 21vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    font-size: 1rem;
+    border-radius: 2vw;
+    outline: none;
+}
+#namePatient{
+    padding: 0.5vw ;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    width: 9vw;;
+    background-color:white;
+    border: 1px solid black;
+    outline: none;
+}
+
+#ssd{
+    padding: 0.5vw ;
+    width: 20vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    background-color:white;
+    border: 1px solid black;
+    outline: none;
+}
+
+.picRepoert{
+    width: 15vw;
+    height: 15vw;
+    margin-top: 2vw;
+    margin-left: 3vw;
+}
+
+.labelChoosePlace{
+    font-size: 1rem;
+    margin-left: 0vw;
+    
+    
+}
+
+.acceptBut{
+    border-radius: 2vw;
+    outline: none;
+    background-color: #FFA500;
+    width: 6vw;
+    height: 2.5vw;
+    margin-left: 13vw;
+    font-size: 1.25rem;
+}
+
+.cancelBut{
+    border-radius: 2vw;
+    outline: none;
+    background-color: rgb(204, 201, 201);
+    width: 6vw;
+    height: 2.5vw;
+    margin-top: 2%;
+    margin-left: 10vw;
+    font-size: 1.25rem;
+    
+}
+
+.formSymtons{
+    height: 60%;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 50px;
+    background-color:white;
+    border: 1px solid black;
+}
+
+.listSymton{
+    margin-top: 5%;
+    margin-left: 45%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.space{
+    width: 10%;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+  }
+  option {
+    text-align: left;
+   
+}
+
+.reportTag{
+    background-color: white;
+    width: 50vw;
+    height: 30vw;
+    margin: auto;
+    margin-top: 10vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+}
+
+.greenReportTag{
+    background-color: #3a6933;
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    
+
+    
+}
+
+.reportImg{
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 70%;
+    height: 60%;
+}
+
+.acceptButReport{
+    border-radius: 2vw;
+    outline: none;
+    background-color: #FFA500;
+    width: 6vw;
+    height: 2.5vw;
+    margin-left: 13vw;
+    font-size: 1.25rem;
+}
+
+.cancelButReport{
+    border-radius: 2vw;
+    outline: none;
+    background-color: rgb(204, 201, 201);
+    width: 6vw;
+    height: 2.5vw;
+    margin-bottom: 3%;
+    margin-left: 10vw;
+    font-size: 1.25rem;
+    
+}
+
+
