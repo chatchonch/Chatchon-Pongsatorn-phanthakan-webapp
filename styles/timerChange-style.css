@@ -1,4 +1,4 @@
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape ) and (min-width:1024px) {
 
     body {
         margin: 0;
@@ -7,15 +7,6 @@
     
     .navbar {
         width: 100%;
-    }
-    .topic {
-        font-size: 20px;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        margin-left: 450px;
     }
     
     ul {
@@ -56,8 +47,7 @@
     
     .container {
         background-color: #F0EEEE;
-        width: 50vw;
-        height: 32vw;
+        width: 60vw;
         margin: auto;
         margin-top: 10vw;
         border-radius: 2vw;
@@ -104,7 +94,7 @@
 
     #timeLabel {
         display: block;
-        margin-top: 2vw;
+        margin-top: 1vw;
         margin-left: 4vw;
         font-size: 25px;
     }
@@ -171,7 +161,7 @@
 
 }
 
-@media only screen and (min-width:600px) and (max-width:1024px) {
+@media only screen and (min-width:601px) and (max-width:1024px){
     
     body{
         margin: 0;
@@ -180,15 +170,6 @@
     
     .navbar {
         width: 100%;
-    }
-    .topic {
-        font-size: 20px;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        margin-left: 450px;
     }
     
     ul {
@@ -222,14 +203,13 @@
     
     .left-content {
         float: left;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
     }
     
     .container {
         background-color: #F0EEEE;
-        width: 50vw;
-        height: 32vw;
+        width: 70vw;
         margin: auto;
         margin-top: 10vw;
         border-radius: 2vw;
@@ -259,15 +239,14 @@
     .date {
         margin-top: 1vw;
         margin-left: 10vw;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .date input {
-        width: 13vw;
-        height: 2vw;
+        width: 25vw;
+        height: 3vw;
         text-align: center;
         font-size: 18px;
-        border-radius: 2vw;
     }
 
     .date label {
@@ -284,15 +263,14 @@
     .timer {
         margin-top: 2vw;
         margin-left: 10vw;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .timer input {
-        width: 13vw;
-        height: 2vw;
+        width: 16vw;
+        height: 3vw;
         text-align: center;
         font-size: 18px;
-        border-radius: 2vw;
     }
 
     .timer label {
@@ -313,21 +291,21 @@
     
     .staff input {
         width: 13vw;
-        height: 2vw;
+        height: 3vw;
         text-align: center;
         font-size: 18px;
         border-radius: 2vw;
     }
 
     .button {
-        margin: 2vw;
+        margin: 5vw;
         text-align: center;
     }
 
     .button button {
         margin: 0vw 4vw;
-        width: 6vw;
-        height: 2vw;
+        width: 10vw;
+        height: 5vw;
         font-size: 18px;
         border-radius: 2vw;
 
@@ -353,15 +331,6 @@
     .navbar {
         width: 100%;
     }
-    .topic {
-        font-size: 20px;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        margin-left: 450px;
-    }
     
     ul {
         width: 100%;
@@ -376,7 +345,7 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 20px 30px;
+        padding: 20px;
         text-decoration: none;
     }
       
@@ -389,7 +358,8 @@
 
     .right-content {
         float: right;
-        font-size: 1.25rem;
+        padding: 30px 2px ;
+        font-size: 0.75rem;
     }
     
     .left-content {
@@ -400,43 +370,42 @@
     
     .container {
         background-color: #F0EEEE;
-        width: 50vw;
-        height: 32vw;
+        width: 85vw;
         margin: auto;
         margin-top: 10vw;
-        border-radius: 2vw;
+        border-radius: 5vw;
         
     }
 
     .headBox {
         display: block;
-        height: 65px;
+        height: 50px;
         margin: 0px auto;
         text-align: center;
-        font-size: 40px;
+        font-size: 30px;
         color: white;
         background-color: #3a6933;
-        border-top-left-radius: 2vw;
-        border-top-right-radius: 2vw;
+        border-top-left-radius: 5vw;
+        border-top-right-radius: 5vw;
     }
 
     #dateLabel {
         display: block;
         margin-top: 1vw;
         margin-left: 4vw;
-        font-size: 25px;
+        font-size: 18px;
      
     }
 
     .date {
         margin-top: 1vw;
         margin-left: 10vw;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .date input {
-        width: 13vw;
-        height: 2vw;
+        width: 50vw;
+        height: 5vw;
         text-align: center;
         font-size: 18px;
         border-radius: 2vw;
@@ -450,20 +419,21 @@
         display: block;
         margin-top: 2vw;
         margin-left: 4vw;
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .timer {
         margin-top: 2vw;
         margin-left: 10vw;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .timer input {
-        width: 13vw;
-        height: 2vw;
+        width: 40vw;
+        height: 5vw;
         text-align: center;
         font-size: 18px;
+        margin: 3px;
         border-radius: 2vw;
     }
 
@@ -475,32 +445,32 @@
         display: block;
         margin-top: 2vw;
         margin-left: 4vw;
-        font-size: 25px;
+        font-size: 16px;
     }
     .staff {
         margin-top: 2vw;
         margin-left: 4vw;
-        font-size: 25px;
+        font-size: 16px;
     }
     
     .staff input {
-        width: 13vw;
-        height: 2vw;
+        width: 15vw;
+        height: 5vw;
         text-align: center;
         font-size: 18px;
         border-radius: 2vw;
     }
 
     .button {
-        margin: 2vw;
+        margin: 5vw;
         text-align: center;
     }
 
     .button button {
         margin: 0vw 4vw;
-        width: 6vw;
-        height: 2vw;
-        font-size: 18px;
+        width: 18vw;
+        height: 8vw;
+        font-size: 14px;
         border-radius: 2vw;
 
     }
