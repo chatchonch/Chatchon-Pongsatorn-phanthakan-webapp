@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="js/js.js" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -72,7 +72,31 @@
           </div>
         </div>
       </div>
-      <div class="formSymtons"><div class="listSymton">อาการ</div></div>
+      
+      <div class="formSymtons"><div class="listSymton">อาการ</div>
+      <div class="box_Symton">
+        <form action="/action_page.php" class="checkbox_symton1">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label><br><br>
+          
+        </form>
+        <form action="/action_page.php" class="checkbox_symton2">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> I have a boat</label><br><br>
+          
+        </form>
+      </div>
+    </div>
+      <p class="another_Symtons">กรอกอาการเพิ่มเติม:</p>
+      <textarea class="textSymtons"></textarea>
       <div>
         <button class="acceptBut">ยืนยัน</button
         ><button class="cancelBut">ยกเลิก</button>

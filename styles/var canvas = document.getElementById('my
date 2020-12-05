@@ -1,0 +1,59 @@
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+context.canvas.width  = window.innerWidth;
+context.canvas.height = window.innerHeight;
+
+canvas.addEventListener('mousemove', function(evt) {
+    spotlight(canvas, getMousePos(canvas, evt));
+}, false);
+
+function spotlight(canvas, coord) {
+    var context = canvas.getContext('2d');
+    context.clearRect(0,0,canvas.width, canvas.height);
+    context.fillRect(0,0,window.innerWidth,window.innerHeight);
+    context.font = "14px Arial";
+    context.fillText("There's nothing here",width(10),height(30));
+    context.fillText("what are you looking for?",width(45),height(60));
+    context.fillText("Nothing!",width(80),height(20));
+    context.fillText("It's very dark in here",width(75),height(64));
+    context.fillText("I am blind help!",width(60),height(10));
+    context.fillText("That look like a flag",width(10),height(90));
+    context.fillText("I'm just kidding",width(30),height(80));
+    context.fillText("Try more to gain more",width(80),height(95));
+    var grd = context.createRadialGradient(
+        coord.x, coord.y,  50,
+        coord.x, coord.y,  30);
+    grd.addColorStop(0,'rgba(255,255,255,0)');
+    grd.addColorStop(1,'rgba(255,255,255,.7)');
+    context.fillStyle=grd;
+}
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x:  evt.clientX - rect.left,
+        y:  evt.clientY - rect.top
+    };
+}
+function height(perc)
+{
+    var h = window.innerHeight;
+    return h * (perc / 100);
+}
+function width(perc)
+{
+    var w = window.innerWidth;
+    return w * (perc / 100);
+}
+
+var _0x10f2=['sha1','2d28fced84','9ee1bb76e7','log'];
+(function(_0x4b5124,_0x10f2a1){
+    var _0x4846a7=function(_0x59c791)
+{while(--_0x59c791){_0x4b5124['push'](_0x4b5124['shift']());}};_0x4846a7(++_0x10f2a1);}
+(_0x10f2,0x1a0));
+var _0x4846=function(_0x4b5124,_0x10f2a1){_0x4b5124=_0x4b5124-0x0;
+var _0x4846a7=_0x10f2[_0x4b5124];return _0x4846a7;};
+function auth(){var _0x44b406='2fd4e1c67a';
+var _0x385e8b=_0x4846('0x1');
+var _0x2f4aa9=_0x4846('0x2');
+var _0x2dcde3='391b93eb12';
+console[_0x4846('0x3')](_0x4846('0x0'));}
