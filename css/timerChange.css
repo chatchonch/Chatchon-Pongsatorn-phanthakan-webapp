@@ -1,0 +1,533 @@
+@media only screen and (orientation: landscape) {
+
+    body {
+        margin: 0;
+        background-color: white;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    .topic {
+        font-size: 20px;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-left: 450px;
+    }
+    
+    ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3a6933;
+    }
+      
+    li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+      }
+      
+      
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .right-content {
+        float: right;
+        font-size: 1.25rem;
+    }
+    
+    .left-content {
+        float: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .container {
+        background-color: #F0EEEE;
+        width: 50vw;
+        height: 32vw;
+        margin: auto;
+        margin-top: 10vw;
+        border-radius: 2vw;
+    }
+
+    .headBox {
+        display: block;
+        height: 65px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        background-color: #3a6933;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+    }
+
+    #dateLabel {
+        display: block;
+        margin-top: 1vw;
+        margin-left: 4vw;
+        font-size: 25px;
+     
+    }
+
+    .date {
+        margin-top: 1vw;
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .date input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .date label {
+        margin-right: 10px;
+    }
+
+    #timeLabel {
+        display: block;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+
+    .timer {
+        margin-top: 2vw;
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .timer input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .timer label {
+        margin-right: 10px;
+    }
+
+    #staffLabel {
+        display: block;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+    .staff {
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+    
+    .staff input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .button {
+        margin: 2vw;
+        text-align: center;
+    }
+
+    .button button {
+        margin: 0vw 4vw;
+        width: 6vw;
+        height: 2vw;
+        font-size: 18px;
+        border-radius: 2vw;
+
+    }
+
+    #submit {
+        background-color: #FFA500;
+    }
+
+    #cancle {
+        background-color: white;
+    }
+
+    #cancle:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    #submit:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1024px) {
+    
+    body{
+        margin: 0;
+        background-color: white;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    .topic {
+        font-size: 20px;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-left: 450px;
+    }
+    
+    ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3a6933;
+    }
+      
+    li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .right-content {
+        float: right;
+        font-size: 1.25rem;
+    }
+    
+    .left-content {
+        float: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .container {
+        background-color: #F0EEEE;
+        width: 50vw;
+        height: 32vw;
+        margin: auto;
+        margin-top: 10vw;
+        border-radius: 2vw;
+        
+    }
+
+    .headBox {
+        display: block;
+        height: 65px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        background-color: #3a6933;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+    }
+
+    #dateLabel {
+        display: block;
+        margin-top: 1vw;
+        margin-left: 4vw;
+        font-size: 25px;
+     
+    }
+
+    .date {
+        margin-top: 1vw;
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .date input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .date label {
+        margin-right: 10px;
+    }
+
+    #timeLabel {
+        display: block;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+
+    .timer {
+        margin-top: 2vw;
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .timer input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .timer label {
+        margin-right: 10px;
+    }
+
+    #staffLabel {
+        display: block;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+    .staff {
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+    
+    .staff input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .button {
+        margin: 2vw;
+        text-align: center;
+    }
+
+    .button button {
+        margin: 0vw 4vw;
+        width: 6vw;
+        height: 2vw;
+        font-size: 18px;
+        border-radius: 2vw;
+
+    }
+
+    #submit {
+        background-color: #FFA500;
+    }
+
+    #cancle {
+        background-color: white;
+    }
+      
+}
+    
+@media only screen and (max-width:600px) {
+    
+    body{
+        margin: 0;
+        background-color: white;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    .topic {
+        font-size: 20px;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-left: 450px;
+    }
+    
+    ul {
+        width: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3a6933;
+    }
+      
+    li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+      
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+
+    .right-content {
+        float: right;
+        font-size: 1.25rem;
+    }
+    
+    .left-content {
+        float: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .container {
+        background-color: #F0EEEE;
+        width: 50vw;
+        height: 32vw;
+        margin: auto;
+        margin-top: 10vw;
+        border-radius: 2vw;
+        
+    }
+
+    .headBox {
+        display: block;
+        height: 65px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        background-color: #3a6933;
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+    }
+
+    #dateLabel {
+        display: block;
+        margin-top: 1vw;
+        margin-left: 4vw;
+        font-size: 25px;
+     
+    }
+
+    .date {
+        margin-top: 1vw;
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .date input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .date label {
+        margin-right: 10px;
+    }
+
+    #timeLabel {
+        display: block;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+
+    .timer {
+        margin-top: 2vw;
+        margin-left: 10vw;
+        font-size: 20px;
+    }
+
+    .timer input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .timer label {
+        margin-right: 10px;
+    }
+
+    #staffLabel {
+        display: block;
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+    .staff {
+        margin-top: 2vw;
+        margin-left: 4vw;
+        font-size: 25px;
+    }
+    
+    .staff input {
+        width: 13vw;
+        height: 2vw;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 2vw;
+    }
+
+    .button {
+        margin: 2vw;
+        text-align: center;
+    }
+
+    .button button {
+        margin: 0vw 4vw;
+        width: 6vw;
+        height: 2vw;
+        font-size: 18px;
+        border-radius: 2vw;
+
+    }
+
+    #submit {
+        background-color: #FFA500;
+    }
+
+    #cancle {
+        background-color: white;
+    }
+    
+    #submit:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    #cancle:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}

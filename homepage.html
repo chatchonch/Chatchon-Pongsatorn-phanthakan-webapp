@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบนัด PCU</title>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+
+<body>
+    <ul>
+        <li class="left-content">ระบบนัด PCU</li>
+        <li style="float: right">
+          <a class="active" href="#English" id="right-content">English</a>
+        </li>
+        <li class="right-content">ติดต่อเรา</li>
+        <a href="../2/homepage.html"><li class="right-content">หน้าแรก</li></a>
+      </ul>
+    <img src="images/8507.jpg">
+    <div class="topic">
+        <p class="topic-article">มีอะไรให้เราช่วยหรือไม่</p>
+    </div>
+    <p>——————————————————————————————————————————————————————————————————————————————————</p>
+    <div class="main-content">
+        <div class="main-image" onclick="window.location.href='../4/clientSelectPlace.html'">
+            <img src="images/doctor.svg">
+            <p>พบแพทย์</p>
+        </div>
+        <div class="main-image" id="check-list">
+            <img src="images/checklist.svg">
+            <p>ตรวจสอบนัด</p>
+        </div>
+        <div class="main-image" onclick="window.location.href='../5/report.html'">
+            <img src="images/immigration.svg">
+            <p>ขอใบรับรองแพทย์</p>
+        </div>
+    </div>
+      </div>
+      <div id="myModal" class="modal">
+
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>คุณพันธกานต์ แพรประเสริฐ หมายเลขบัตรประจำตัวประชาชน 1234567891011 ได้ทำการนัดที่สถานบริการที่ 1 เรียบร้อยแล้ว</p>
+        </div>
+      
+      </div>
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("check-list");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+</html>
