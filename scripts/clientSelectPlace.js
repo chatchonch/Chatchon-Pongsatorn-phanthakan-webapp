@@ -26,7 +26,7 @@ var db = firebase.firestore();
     let dateAppointment = document.getElementById('date_appointment').value;
     let timeAppointment = document.getElementById('time_appointment').value;
     let sympton = document.getElementById('sympton').value;
-    window.location.href = "homepage.html"
+    alert("Complete")
     db.collection(location).doc(SSN).set({
       date: date,
       firstname: firstname,

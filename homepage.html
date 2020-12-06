@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/admin.css">
   </head>
-  
-  <script src="scripts/login.js"></script>
   <script src="scripts/popup.js"></script>
+  <script src="scripts/login.js"></script>
+  <script src="scripts/homepage.js"></script>
   <body>
     <ul>
       <li class="left-content">ระบบนัด PCU</li>
@@ -29,24 +29,24 @@
         <tr>
           <td>
             <div class="main-image">
-              <img src="images/doctor.png" />
+              <img src="images/doctor.svg" />
             </div>
           </td>
           <td>
             <div class="main-image">
-              <img src="images/checklist.png" />
+              <img src="images/checklist.svg" />
             </div>
           </td>
           <td>
             <div class="main-image">
-              <img src="images/immigration.png" />
+              <img src="images/immigration.svg" />
             </div>
           </td>
         </tr>
         <tr>
           <td><button class="buttonOption" onclick="window.location.href = 'clientSelectPlace.html'">พบแพทย์</button></td>
           <td>
-            <button class="buttonOption" onclick="checkAppointment()">
+            <button class="buttonOption" id="checkAppointment" onclick="checkAppointment()">
               ตรวจสอบนัด
             </button>
           </td>
@@ -69,9 +69,7 @@
       <div class="modal-cententForAppointment">
         <div>
           <div class="closePopup2" onclick="close_checkAppointment()">+</div>
-          <p class="text_appointment">
-            นายแงง่วงนอนจังเลย เมื่อไหร่จะเสร็จ นัดตรวจที่: สถานบริการที่1
-            วันที่ 3/4/2554 เวลา 13.15
+          <p class="text_appointment" id="text_appointment">
           </p>
         </div>
         <button class="cancel_appointment">ยกเลิกนัด</button>
@@ -85,32 +83,32 @@
           <p class="textRubRongPad">ขอใบรับรองแพทย์</p>
           <div class="closePopup" onclick="close_ask_report()">+</div>
         </div>
-        <select class="selectPopup">
-          <option value="place1">สถานบริการที่ 1</option>
-          <option value="place2">สถานบริการที่ 2</option>
-          <option value="place3">สถานบริการที่ 3</option>
+        <select class="selectPopup" id="places">
+          <option value="สถานบริการที่ 1">สถานบริการที่ 1</option>
+          <option value="สถานบริการที่ 2">สถานบริการที่ 2</option>
+          <option value="สถานบริการที่ 3">สถานบริการที่ 3</option>
         </select>
         <div class="box_name">
           <from class="element_RudRongPad">
-            <label class="label_box">ชื่อ:</label
-            ><input type="text" placeholder="กรอกชื่อของคุณ..." class="style_box" />
-            <label class="label_box">สกุล:</label
-            ><input
-              type="text"
+            <label class="label_box">ชื่อ:</label>
+            <input type="text" placeholder="กรอกชื่อของคุณ..." class="style_box" id="fname">
+            <label class="label_box">สกุล:</label>
+            <input
               type="text"
               placeholder="กรอกนามสกุลของคุณ..."
               class="style_box"
+              id="lname"
             />
           
-            <label class="label_box_ssn">รหัสบัตรประชาชน:</label
-            ><input type="text" placeholder="กรอกรหัสบัตรประชาชนของคุณ..." class="style_box"/>
-            <div class="flexDirectRow"><input type="date" id="date_appointment" name="date_appointment" class="date_appointment">
-              <select class="select_time_appointment" id="time_appointment">
-                <option value="time1">09.00</option>
-                <option value="time2">09.15</option>
-                <option value="time3">09.30</option>
-                <option value="time4">09.45</option>
-                <option value="time5">10.00</option></div>
+            <label class="label_box_ssn">รหัสบัตรประชาชน:</label>
+            <input type="text" placeholder="กรอกรหัสบัตรประชาชนของคุณ..." class="style_box" id="SSN">
+            <div class="flexDirectRow"><input type="date" id="date_popup" name="date_appointment" class="date_appointment">
+              <select class="select_time_appointment" id="time_popup">
+                <option value="09:00">09:00</option>
+                <option value="09:15">09:15</option>
+                <option value="09:30">09:30</option>
+                <option value="09:45">09:45</option>
+                <option value="10:00">10:00</option></div>
   
             </select>
           </form>
@@ -118,7 +116,7 @@
           
         </div>
         <div>
-          <button class="buttonSubmitPopup">ยืนยัน</button>
+          <button class="buttonSubmitPopup" id="submitPopup">ยืนยัน</button>
         </div>
       </div>
     </div>
@@ -126,5 +124,6 @@
   </body>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
-  
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
 </html>

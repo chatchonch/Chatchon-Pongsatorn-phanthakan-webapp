@@ -510,7 +510,6 @@ select {
   
   .element_form{
     color: black;
-    
     padding: 20px;
     display: flex;
     flex-direction:column;
