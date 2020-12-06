@@ -1,4 +1,5 @@
-body {
+
+body{
     margin: 0;
     background-color: #e8f0ed;
 }
@@ -35,22 +36,33 @@ ul {
 
 
 .loginTab{
+    
     width: 50vw;
-    height: 40vw;
+    height: 100%;
     margin: auto;
-    margin-top: 2vw;
-    border-radius: 30px;
+    margin-top: 5vw;
+   
     overflow: hidden;
     display: flex ;
-    flex-direction: row;  
+    flex-direction: row;
+    
+    
+    
+    
 }
 
 .loginLeft{
     margin-top: 1vw;
     background-color: #3a6933;
     width: 20vw;
-    height: 37vw;
+    height: 40.15vw;
     border-radius: 30px 0px 0px 30px;
+    
+    
+   
+    
+    
+    
     /* border-radius: 100px 0 0 100px;  */
 }
 
@@ -58,7 +70,7 @@ ul {
     margin-top: 1vw;
     background-color: white;
     width: 30vw;
-    height: 37vw;
+    height: 40vw;
     display: flex ;
     flex-direction: column;
     border: 1px solid black;
@@ -66,6 +78,7 @@ ul {
     
     
 }
+
 
 .welcomeText{
     margin-top: 2.5vw;
@@ -90,6 +103,7 @@ form{
 input[type=text], input[type=password]{
 width: 50%;
 font-size: 20px;
+
 padding: 10px;
 margin: auto;
 display: inline-block;
@@ -97,8 +111,9 @@ margin-top: 10px;
 border: none;
 background: rgb(224, 223, 223);
 border: 0.5px solid black;
+  
+ 
 }
-
 label{
     margin-left: 3vw;
     font-size: 1.2rem;
@@ -106,19 +121,21 @@ label{
 
 .buttonSubmit{
     outline: none;
-    width: 25%;
+    width: 50%;
     height: 50%;
     border-radius: 15px;
-    margin-left:3vw;
+    margin-left:25%;
     margin-top: 2vw;
     background-color: #FFA500;
     font-size: 1rem;
-    font-weight: bold;  
+    font-weight: bold;
+    
+    
 }
 
 button:hover {
     opacity: 0.8;
-    cursor: pointer;
+    
   }
 
 .signIn{
@@ -130,13 +147,294 @@ button:hover {
     display: flex;
     flex-direction: row;
     margin-left: 200px;
+
+
 }
 
-.hospital {
+.facebook{
+    width: 8%;
+    height: 8%;
+    margin: 20px;
+    margin-top: 50px;
+    
+    
+}
+
+
+.hospital{
     width: 15vw;
     height: 15vw;
     margin-top: 50%;
     margin-left: 10%;
+}
+
+.choosePlaceTag{
+    background-color: white;
+    width: 50vw;
+    height: 80vw;
+    margin: auto;
+    margin-top: 10vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: column;
+    border: 1px solid black;
+    -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+}
+.greenHead{
+    background-color: #3a6933;
+    height: 5vw;
+    width: 50vw;
+    
+    
+}
+
+.textBook{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1vw;
+    font-weight: bold;
+    color: honeydew;
+}
+
+.flexDirectRow{
+    display: flex ;
+    flex-direction: row;
+}
+
+.flexDirectColumn{
+    display: flex ;
+    flex-direction: column;
+}
+
+.seperateHead{
+    margin-top: 4vw;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+
+.seperateInputandSelect{
+    margin-top: 4vw;
+    margin-left: 6vw;
+}
+
+
+
+.inputPosition{
+    margin-top: 1vw;
+    margin-left: 6vw;
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+}
+.inputPosition2{
+    margin-top: 1vw;
+    margin-left: 6vw;
+   
+    
+}
+
+.seperateInputandSelectReport{
+    margin-top: 4vw;
+    margin-right: 4vw;
+}
+
+.inputPositionReport{
+    margin-top: 1vw;
+    margin-right: 4vw;
+    display: flex;
+    flex-direction: row;
+}
+.inputPositionReport2{
+    margin-top: 1vw;
+    margin-right: 4vw;
+}
+
+#places{
+    padding: 0.25vw;
+    width: 21vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    font-size: 1rem;
+    
+    outline: none;
+}
+#namePatient{
+    padding: 0.5vw ;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    width: 9vw;;
+    background-color:white;
+    border: 1px solid black;
+    outline: none;
+}
+
+#ssd{
+    padding: 0.5vw ;
+    width: 20vw;
+    margin-top: 0vw;
+    margin-left: 0vw;
+    background-color:white;
+    border: 1px solid black;
+    outline: none;
+}
+
+.picRepoert{
+    width: 15vw;
+    height: 15vw;
+    margin-top: 2vw;
+    margin-left: 3vw;
+    
+}
+
+.labelChoosePlace{
+    font-size: 1rem;
+    margin-left: 0vw;
+  
+    
+    
+}
+
+.acceptBut{
+    border-radius: 2vw;
+    outline: none;
+    background-color: #FFA500;
+    width: 6vw;
+    height: 2.5vw;
+    margin-left: 13vw;
+    font-size: 1.25rem;
+}
+
+.cancelBut{
+    border-radius: 2vw;
+    outline: none;
+    background-color: rgb(204, 201, 201);
+    width: 6vw;
+    height: 2.5vw;
+    margin-top: 2%;
+    margin-left: 10vw;
+    font-size: 1.25rem;
+    
+}
+
+.formSymtons{
+    height: 20vw;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+    background-color:white;
+    border: 1px solid black;
+}
+
+.textSymtons{
+    height: 20vw;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    background-color:white;
+    border: 1px solid black;
+    padding: 0vw;
+    resize: none;
+}
+
+.another_Symtons{
+    margin-left: 5vw;
+    margin-top: 50px;
+}
+
+.listSymton{
+    
+   text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.box_Symton{
+    flex-direction: row;
+    padding: 50px;
+    display: flex;
+}
+
+
+.checkbox_symton2{
+    margin-left: 150px;
+}
+.space{
+    width: 10%;
+}
+
+.space_below{
+    height: 20px;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+  }
+  option {
+    text-align: left;
+   
+}
+
+.reportTag{
+    background-color: white;
+    width: 50vw;
+    height: 30vw;
+    margin: auto;
+    margin-top: 10vw;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: flex ;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+}
+
+.greenReportTag{
+    background-color: #3a6933;
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    
+
+    
+}
+
+.reportImg{
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 70%;
+    height: 60%;
+}
+
+.acceptButReport{
+    border-radius: 2vw;
+    outline: none;
+    background-color: #FFA500;
+    width: 6vw;
+    height: 2.5vw;
+    margin-left: 13vw;
+    font-size: 1.25rem;
+}
+
+.cancelButReport{
+    border-radius: 2vw;
+    outline: none;
+    background-color: rgb(204, 201, 201);
+    width: 6vw;
+    height: 2.5vw;
+    margin-bottom: 3%;
+    margin-left: 10vw;
+    font-size: 1.25rem;
+    
 }
 
 .typeLogin{
@@ -169,10 +467,6 @@ button:hover {
     
 }
 
-.noAccount:hover {
-    cursor: pointer;
-}
-
 .aforLogin{
     color: gray;
 }
@@ -191,7 +485,7 @@ button:hover {
 
 .bg_model{
     width: 100vw;
-    height: 55vw;
+    height: 100vw;
     background-color:rgb(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
@@ -206,10 +500,11 @@ button:hover {
     width: 700px;
     height: 500px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     display: flex ;
     flex-direction: column;
     position: relative;
+    border: 1px solid black;
     
   }
 
@@ -257,205 +552,13 @@ button:hover {
       font-size: 1.5rem;
   }
 
-@media screen and (max-width:768px){
-   .loginTab{
-       height: 100vw;
-       background-color:white;
-       border-radius: 0%;
-   }
+  
 
-   .loginLeft{
-       display: none;
-   }
 
-   .loginRight{
-    width: 100%;
-    height: 80%;
-    border-radius: 0%;
 
-   }
 
-   #email, #password{
-       font-size: 1rem;
-       width: 50%;
-       
-   }
 
-   #lname, #fname{
-       margin-left: 15%;
-       font-size: 1rem;
-   }
 
-   .forgetPassword{
-       margin-left: 67%;
-   }
-   
-   .typeLogin{
-       display: flex;
-       flex-direction:column;
-       
-   }
-
-   .buttonSubmit{
-       width: 70%;
-       height: 50px;
-       margin-left: 15%;
-       font-size: 2rem;
-   }
-   .or{
-    margin-left: 47%;
-    
-   }
-   .noAccount{
-    width: 70%;
-    margin-left: 28%;
-    font-size: 1rem;
-   }
-
-   .accountLogin{
-       display: none
-   }
-
-   .bg_model{
-    width: 100%;
-    height: 100%;
-    background-color:rgb(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-   
-  }
-
-  @media only screen and (max-width: 600px){
-    .navbar{
-        width: 100%;
-    }
-
-    
-    .loginTab{
-        width: 80%;
-        height: 130vw;
-        
-    }
- 
-     .loginLeft{
-        display: none;
-    } 
- 
-    .loginRight{
-     width: 100%;
-     height: 95%;
-     
-     border-radius: 0%;
-     
- 
-    }
- 
-    #email, #password{
-        font-size: 0.8rem;
-        width: 50%;
-        
-    }
- 
-    #lname, #fname{
-        margin-left: 15%;
-        font-size: 0.8rem;
-    }
- 
-    .forgetPassword{
-        margin-left: 65%;
-    }
-    
-    .typeLogin{
-       
-        display: flex;
-        flex-direction:column;
-        
-    }
- 
-    .buttonSubmit{
-        width: 70%;
-        height: 30px;
-        margin-left: 15%;
-        font-size: 1rem;
-        
-    }
-    .or{
-     margin-left: 45%;
-     
-    }
-    .noAccount{
-     width: 70%;
-     margin-left: 20%;
-     font-size: 1rem;
-    }
- 
-    .accountLogin{
-        display: none
-    }
-    .facebook_Button{
-     width: 70%;
-     height: 30px;
-     display: block;
-     margin-left: 15%;
-     margin-top: 5%;
-     border-radius: 20px;
-     background-color: #3b5998;
-     color: white;
-    }
-    .google_Button{
-     width: 70%;
-     height: 30px;
-     margin-left: 15%;
-     display: block;
-     margin-top: 2.5%;
-     border-radius: 20px;
-     background-color: rgb(233, 232, 232);
-    }
- 
-    .bg_model{
-     width: 100%;
-     height: 110%;
-     background-color:rgb(0, 0, 0, 0.7);
-     position: absolute;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     display: none;
-    
-   } 
-
-   .modal_centent{
-       width: 90%;
-   }
-
-   .tab_modal{
-        width: 100%;
-
-   }
-   
-   .Nopassword_button_submit{
-    margin-left: 25%;
-    font-size: 1rem;
-    height: 30px;
-    width: 50%;
-   }
 
    
 
-   #phone_input, #ssn_input{
-    font-size: 0.6rem;
-   }
-
-   #phone_label, #ssn_label{
-    font-size: 0.7rem;
-    font-weight: bold;
-   }
-
-   
-  }
-}
