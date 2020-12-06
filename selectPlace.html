@@ -4,22 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/Template.css" />
-    <script src="scripts/selectPlace-script.js"></script>
+    <link rel="stylesheet" href="styles/selectPlace.css" />
+    <script src="scripts/selectPalce.js"></script>
   </head>
 
   <body>
     <ul>
       <li class="left-content">ระบบนัด PCU</li>
-      <li style="float: right">
-        <a class="active" href="#English" id="right-content">English</a>
-      </li>
-      <li class="right-content">ติดต่อเรา</li>
-      <a href="../3/login.html"><li class="right-content">หน้าแรก</li></a>
+      <a href="login.html"><li class="right-content">ล็อกเอ้าท์</li></a>
+      <a href="admin.html"><li class="right-content">หน้าแรก</li></a>
     </ul>
-
     <img src="images/8507.jpg" class="mainPic" />
-
     <div class="topic">
       <p class="placeForService" style="color: black;" >สถานบริการที่ 1</p>
     </div>
@@ -31,8 +26,7 @@
         <div class="insideTemplateFunc"><p class="stylePlace">แก้ไขเวลา </p></div>
         <div>
           <img src="images/picture (1).svg" class="setPlacePic2" />
-          <div class="flexDirectColumn"><button class="checkBut" id="timerChanger">กำหนดเปิด</button>
-            <button class="checkBut">กำหนดปิด</button></div>
+          <div class="flexDirectColumn"><button class="checkBut" id="timerChanger">กำหนดเวลาเปิด-ปิด</button></div>
         </div>
       </div>
       <div class="templateFunc">
@@ -41,15 +35,6 @@
           <img src="images/checklist.svg" class="setPlacePic" />
           <div class="flexDirectColumn"><button class="checkBut" id="clientButton" >ตรวจสอบ</button>
             </div>
-        </div>
-      </div>
-      <div class="templateFunc">
-        <div class="insideTemplateFunc"><p class="stylePlace">ตารางการทำงานแพทย์</p></div>
-        <div>
-          <img src="images/calendar.svg" class="setPlacePic2" />
-          <div class="flexDirectColumn"><button class="checkBut">จัดการตารางของแพทย์</button>
-            <button class="checkBut">ตรวจสอบ</button></div>
-          
         </div>
       </div>
     </div>
@@ -102,9 +87,6 @@
 
           <label class="clientLabel">รหัสบัตรประชาชน:</label>
           <input type="text" class="client-id">
-
-          <label class="clientLabel">ตรวจสอบรายเดือน:</label>
-          <input type="month" class="client-month">
           
           <div class="button">
             <button id="client-submit" onclick="alert('ตรวจสอบเสร็จสิ้น')">ตกลง</button>
