@@ -1,15 +1,15 @@
-function myFunction3() {
-    document.querySelector(".bg-model").style.display = "flex";
-  }
-  function closePopup3() {
-    document.querySelector(".bg-model").style.display = "none";
-  }
+function ask_report() {
+  document.querySelector(".bg-model").style.display = "flex";
+}
+function close_ask_report() {
+  document.querySelector(".bg-model").style.display = "none";
+}
 
-  function myFunction2() {
+  function checkAppointment() {
     document.querySelector(".bg-model2").style.display = "flex";
   }
 
-  function closePopup2() {
+  function close_checkAppointment() {
     document.querySelector(".bg-model2").style.display = "none";
   }
 
@@ -19,3 +19,6 @@ function myFunction3() {
   function closePopup() {
     document.querySelector(".bg_model").style.display = "none";
   }
+
+
+ 
