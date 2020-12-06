@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-signin-client_id" content="334410052801-6k1p80rk7gh4e9nh6lvlgn5sco5r1233.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/login.js"></script>
+    <script src="scripts/popup.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -13,7 +15,6 @@
     <title>Login</title>
   </head>
   <body>
-    
     <div class="loginTab">
       <div class="loginLeft">
         <img src="images/hospital.png" class="hospital" />
@@ -21,60 +22,57 @@
       <div class="loginRight">
         <p class="welcomeText">ยินดีต้อนรับ</p>
         <form id="myForm">
+          <div class="for_normal">
+          <div class="for_patient">สำหรับผู้ป่วย</div>
+            <div class="g-signin2" style="margin-left: 100px; padding-top: 30px;" data-onsuccess="onSignIn"></div>
+            
+            
+              <a onclick="myFunction()" class="aforLogin"> เข้าสู่ระบบโดยไม่ใช้รหัสผ่าน</a>
+            
+            
+          </div>
+          <div>________________________________________________</div>
+          <div class="admin_login">สำหรับผู้ดูแล</div>
           <label for="username" id="username">รหัสผู้ใช้งาน :</label>
           <input type="text" id="username" name="username">
-          <br>
+          
+  
           <label for="password" id="password">รหัสผ่าน :</label>
           <input type="password" id="password" name="password">
-          <label class="forgetPassword"
-            ><a href="https://www.w3schools.com" class="aforLogin"
-              >ลืมรหัสผ่าน?</a
-            ></label
-          >
+          
         </form>
         <div class="typeLogin">
           <button type="submit" class="buttonSubmit" id="submit-button">
             เข้าสู่ระบบ
           </button>
         </div>
-        <div class="g-signin2" style="margin: auto; padding-top: 30px;" data-onsuccess="onSignIn"></div>
-        <div class="noAccount">
-          <a onclick="myFunction()" class="aforLogin"
-            >เข้าสู่ระบบโดยไม่ใช้รหัสผ่าน</a
-          >
-        </div>
+  
+  
         <div class="space_below"></div>
       </div>
     </div>
-   <div class="space_below"></div>
+    <div class="space_below"></div>
     <div class="bg_model">
       <div class="modal_centent">
         <div class="tab_modal">
           <div class="closePopup" onclick="closePopup()">+</div>
           <div class="box_from">
-          <form class="element_form">
-            <label id="ssn_label">เลขบัตรประชาชน:</label
-            ><input
-              type="text"
-              placeholder="กรอกเลขเลขบัตรประชาชนของคุณ..."
-              id="ssn_input"
-            />
-          </form>
-          <form class="element_form">
-            <label id="phone_label">เบอร์โทรศัพท์:</label
-            ><input
-              type="text"
-              placeholder="กรอกเบอร์โทรศัพท์ของคุณ..."
-              id="phone_input"
-            />
-          </form>
-          <button class="Nopassword_button_submit">ยืนยัน</button>
-        </div>
+            <form class="element_form">
+              <label id="ssn_label">เลขบัตรประชาชน:</label><input type="text" placeholder="กรอกเลขเลขบัตรประชาชนของคุณ..."
+                id="ssn_input" />
+            </form>
+            <form class="element_form">
+              <label id="phone_label">เบอร์โทรศัพท์:</label><input type="text" placeholder="กรอกเบอร์โทรศัพท์ของคุณ..."
+                id="phone_input" />
+            </form>
+            <button class="Nopassword_button_submit" onclick="window.location.href='homepage.html'">ยืนยัน</button>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
   <script>
     let submitBtm = document.getElementById("submit-button");
     submitBtm.addEventListener('click', () => {
@@ -90,5 +88,4 @@
       }
   })
   </script>
-  <script src="js/popup.js"></script>
 </html>

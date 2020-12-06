@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
     <title>ระบบนัด PCU</title>
-    <link rel="stylesheet" href="styles/Home.css" />
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/admin.css">
   </head>
-  <script src="js/popup.js"></script>
+  <script src="scripts/popup.js"></script>
+  <script src="scripts/login.js"></script>
   <body>
     <ul>
       <li class="left-content">ระบบนัด PCU</li>
-      <li style="float: right">
-        <a class="active" href="#English">English</a>
-      </li>
-      <li class="right-content">หน้าแรก</li>
-      <li class="right-content">ติดต่อเรา</li>
+      <a href="login.html"><li class="right-content" onclick="signOut()">ออกจากระบบ</li></a>
+      <a href="homepage.html"><li class="right-content">หน้าแรก</li></a>
     </ul>
     <img src="images/8507.jpg" />
     <div class="topic">
@@ -28,22 +28,22 @@
         <tr>
           <td>
             <div class="main-image">
-              <img src="images/doctor.png" />
+              <img src="images/doctor.svg" />
             </div>
           </td>
           <td>
             <div class="main-image">
-              <img src="images/checklist.png" />
+              <img src="images/checklist.svg" />
             </div>
           </td>
           <td>
             <div class="main-image">
-              <img src="images/immigration.png" />
+              <img src="images/immigration.svg" />
             </div>
           </td>
         </tr>
         <tr>
-          <td><button class="buttonOption">พบแพทย์</button></td>
+          <td><button class="buttonOption" onclick="window.location.href = 'clientSelectPlace.html'">พบแพทย์</button></td>
           <td>
             <button class="buttonOption" onclick="myFunction2()">
               ตรวจสอบนัด
@@ -111,4 +111,6 @@
       </div>
     </div>
   </body>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
 </html>
