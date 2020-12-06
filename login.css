@@ -87,8 +87,7 @@ form{
 
 input[type=text], input[type=password]{
 width: 50%;
-height: 10px;
-font-size: 1rem;
+font-size: 20px;
 padding: 10px;
 margin: auto;
 display: inline-block;
@@ -100,8 +99,7 @@ border: 0.5px solid black;
 
 label{
     margin-left: 3vw;
-    margin-top: 1vw;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .buttonSubmit{
@@ -415,37 +413,25 @@ select {
     width: 2vw;
     height: 2vw;
     margin-top: 2vw;
-  
+    margin-left: 2vw;
 }
 
-.for_patient{
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-left: 10px;
-    
+.noAccount {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    height: 2vw;
+    margin-top: 2vw;
+    margin-left: 8.5vw;
+    text-decoration: underline;
 }
-
-
 
 .noAccount:hover {
     cursor: pointer;
 }
 
-.admin_login{
-    margin-top: 1.5vw;
-    margin-left: 1.5vw;
-    
-}
-
 .aforLogin{
-    color: rgb(83, 81, 81);
-    text-decoration: underline;
-    margin-left: 4.25vw;
-    margin-top: 1vw;
-    font-size: 1rem;
-   
-  
-    
+    color: gray;
 }
 
 .facebook_Button{
@@ -525,14 +511,4 @@ select {
       cursor: pointer;
       outline: none;
       font-size: 1.5rem;
-  }
-
-  .for_normal{
-    border: 0.5px solid black;
-  width: 87%;
-   height: 150px;
-    margin-left: 20px;
-    background-color: rgb(230, 223, 223);
-    display: flex;
-    flex-direction: column;
   }
