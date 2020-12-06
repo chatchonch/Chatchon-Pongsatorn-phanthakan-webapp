@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="styles/homepage.css">
     <link rel="stylesheet" href="styles/admin.css">
   </head>
-  <script src="scripts/popup.js"></script>
+  
   <script src="scripts/login.js"></script>
+  <script src="scripts/popup.js"></script>
   <body>
     <ul>
       <li class="left-content">ระบบนัด PCU</li>
@@ -28,31 +29,31 @@
         <tr>
           <td>
             <div class="main-image">
-              <img src="images/doctor.svg" />
+              <img src="images/doctor.png" />
             </div>
           </td>
           <td>
             <div class="main-image">
-              <img src="images/checklist.svg" />
+              <img src="images/checklist.png" />
             </div>
           </td>
           <td>
             <div class="main-image">
-              <img src="images/immigration.svg" />
+              <img src="images/immigration.png" />
             </div>
           </td>
         </tr>
         <tr>
           <td><button class="buttonOption" onclick="window.location.href = 'clientSelectPlace.html'">พบแพทย์</button></td>
           <td>
-            <button class="buttonOption" onclick="myFunction2()">
+            <button class="buttonOption" onclick="checkAppointment()">
               ตรวจสอบนัด
             </button>
           </td>
           <td>
             <button
               id="Button_RudRongPad"
-              onclick="myFunction()"
+              onclick="ask_report()"
               class="buttonOption"
             >
               ขอใบรับรองแพทย์
@@ -63,11 +64,26 @@
     </div>
     <div class="space"></div>
 
+    
+    <div class="bg-model2">
+      <div class="modal-cententForAppointment">
+        <div>
+          <div class="closePopup2" onclick="close_checkAppointment()">+</div>
+          <p class="text_appointment">
+            นายแงง่วงนอนจังเลย เมื่อไหร่จะเสร็จ นัดตรวจที่: สถานบริการที่1
+            วันที่ 3/4/2554 เวลา 13.15
+          </p>
+        </div>
+        <button class="cancel_appointment">ยกเลิกนัด</button>
+      </div>
+    </div>
+
+    
     <div class="bg-model">
       <div class="modal-centent">
         <div class="popupRubRongPad">
           <p class="textRubRongPad">ขอใบรับรองแพทย์</p>
-          <div class="closePopup" onclick="closePopup()">+</div>
+          <div class="closePopup" onclick="close_ask_report()">+</div>
         </div>
         <select class="selectPopup">
           <option value="place1">สถานบริการที่ 1</option>
@@ -85,12 +101,21 @@
               placeholder="กรอกนามสกุลของคุณ..."
               class="style_box"
             />
-          </from>
-
-          <form class="element_RudRongPad">
+          
             <label class="label_box_ssn">รหัสบัตรประชาชน:</label
             ><input type="text" placeholder="กรอกรหัสบัตรประชาชนของคุณ..." class="style_box"/>
+            <div class="flexDirectRow"><input type="date" id="date_appointment" name="date_appointment" class="date_appointment">
+              <select class="select_time_appointment" id="time_appointment">
+                <option value="time1">09.00</option>
+                <option value="time2">09.15</option>
+                <option value="time3">09.30</option>
+                <option value="time4">09.45</option>
+                <option value="time5">10.00</option></div>
+  
+            </select>
           </form>
+
+          
         </div>
         <div>
           <button class="buttonSubmitPopup">ยืนยัน</button>
@@ -98,19 +123,8 @@
       </div>
     </div>
 
-    <div class="bg-model2">
-      <div class="modal-cententForAppointment">
-        <div>
-          <div class="closePopup2" onclick="closePopup2()">+</div>
-          <p class="text_appointment">
-            นายแงง่วงนอนจังเลย เมื่อไหร่จะเสร็จ นัดตรวจที่: สถานบริการที่1
-            วันที่ 3/4/2554 เวลา 13.15
-          </p>
-        </div>
-        <button class="cancel_appointment">ยกเลิกนัด</button>
-      </div>
-    </div>
   </body>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+  
 </html>
