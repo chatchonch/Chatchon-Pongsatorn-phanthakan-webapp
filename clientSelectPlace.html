@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-client_id" content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
+    <link rel="stylesheet" href="styles/clientSelectPlace.css" />
+    <script src="scripts/login.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <ul>
+      <li class="left-content">ระบบนัด PCU</li>  
+      <a href="login.html"><li class="right-content" onclick="signOut()">ออกจากระบบ</li></a>
+      <a href="homepage.html"><li class="right-content">หน้าแรก</li></a>
+    </ul>
+    </div>
+    <div class="choosePlaceTag">
+      <div class="greenHead"><p class="textBook">จองคิวนัด</p></div>
+      <div class="flexDirectRow">
+        <div>
+          <img src="images/health-report.png" class="picRepoert" />
+        </div>
+        <div class="flexDirectColumn">
+          <div class="seperateInputandSelect">
+            <form>
+              <label class="labelChoosePlace">เลือกสถานบริการ:</label>
+              <select id="places" name="placelist" form="placeForm">
+                <option value="สถานบริการที่ 1">สถานบริการที่ 1</option>
+                <option value="สถานบริการที่ 2">สถานบริการที่ 2</option>
+                <option value="สถานบริการที่ 3">สถานบริการที่ 3</option>
+              </select>
+            </form>
+          </div>
+          <div class="inputPosition">
+            <form>
+              <label class="labelChoosePlace">ชื่อ:</label>
+              <input
+                type="text"
+                id="fname"
+                placeholder="ชื่อของคุณ..."
+                style="font-size: 1rem"
+              />
+            </form>
+            <div class="space"></div>
+            <form>
+              <label class="labelChoosePlace">สกุล:</label>
+              <input
+                type="text"
+                id="lname"
+                placeholder="นามสกุลของคุณ..."
+                style="font-size: 1rem"
+              />
+            </form>
+          </div>
+          <div class="inputPosition2">
+            <label class="labelChoosePlace">เลขบัตรประชาชน:</label>
+            <form>
+              <input
+                type="text"
+                id="ssn"
+                placeholder="เลขบัตรประชาชนของคุณ..."
+                style="font-size: 1rem"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="formSymtons">
+        <div class="listSymton">ช่วงเวลาจอง</div>
+        
+
+      </div>
+      <p class="another_Symtons">กรอกอาการเพิ่มเติม:</p>
+      <textarea class="textSymtons"></textarea>
+      <div>
+        <button class="acceptBut" id="submit-button">ยืนยัน</button>
+        <button class="cancelBut" onclick="window.location.href='homepage.html'">ยกเลิก</button>
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+<script>
+  var d = new Date();
+  var date = `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`
+  console.log(date);
+  var firebaseConfig = {
+    apiKey: "AIzaSyBsm2OONg2-y0A53i0mhDrGaBv_EzNksRE",
+    authDomain: "myprojectpcu.firebaseapp.com",
+    projectId: "myprojectpcu",
+    storageBucket: "myprojectpcu.appspot.com",
+    messagingSenderId: "653860991694",
+    appId: "1:653860991694:web:09b7de81d7b5f15d2b569f",
+    measurementId: "G-CB5P88YJ8G"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+  var db = firebase.firestore();
+  let submitBtm = document.getElementById('submit-button');
+  submitBtm.addEventListener('click', function() {
+    let location = document.getElementById('places').value;
+    let firstname = document.getElementById('fname').value;
+    let lastname = document.getElementById('lname').value;
+    let SSN = document.getElementById('ssn').value;
+    db.collection(location).doc(SSN).set({
+      date: date,
+      firstname: firstname,
+      lastname: lastname,
+      ssn: SSN,
+      location: location
+    })
+    .then(function(docRef) {
+    console.log("Document written with ID: ", docRef.id);
+})
+    .catch(function(error) {
+      console.error("Error adding document: ", error);
+    });
+  })
+  </script>
+</html>
