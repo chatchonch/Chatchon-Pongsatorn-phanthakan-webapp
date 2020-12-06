@@ -1,0 +1,90 @@
+.column_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.row_flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.name_patient{
+    font-size: 2.5rem;
+    color: rgb(66, 65, 65);
+    margin-top: 8vw;
+    margin-left: 10vw;
+    
+}
+
+.table_patient{
+    border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+    border: 0.5px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+.green_head_table{
+    background-color: #3a6933;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.ssn_head_table, .fname_head_table, .lname_head_table, .phone_head_table, .date_head_table, .place_head_table{
+    width: 15%;
+    background-color: #3a6933;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+
+
+.table{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 5vw;
+}
+
+.ssn_to_find{
+    width: 15vw;
+    height: 2.5vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+
+    font-size: 1rem;
+}
+
+.find_ssn_box{
+    border: 0.5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 15vw;
+    width: 25vw;
+    height: 5vw;
+    margin-top: 6vw;
+    background-color:rgb(226, 225, 225);
+    display: flex;
+    flex-direction: row;
+}
+
+.find_but{
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #3a6933;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+}

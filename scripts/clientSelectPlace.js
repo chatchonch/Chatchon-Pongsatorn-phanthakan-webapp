@@ -22,18 +22,28 @@ var db = firebase.firestore();
     let firstname = document.getElementById('fname').value;
     let lastname = document.getElementById('lname').value;
     let SSN = document.getElementById('ssn').value;
+    let phone = document.getElementById('phone').value;
+    let dateAppointment = document.getElementById('date_appointment').value;
+    let timeAppointment = document.getElementById('time_appointment').value;
+    let sympton = document.getElementById('sympton').value;
+    window.location.href = "homepage.html"
     db.collection(location).doc(SSN).set({
       date: date,
       firstname: firstname,
       lastname: lastname,
       ssn: SSN,
-      location: location
+      phone: phone,
+      location: location,
+      dateAppointment: dateAppointment,
+      timeAppointment: timeAppointment,
+      sympton: sympton
     })
     .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
 })
     .catch(function(error) {
       console.error("Error adding document: ", error);
-    });
+    }
+    );
   })
 }
