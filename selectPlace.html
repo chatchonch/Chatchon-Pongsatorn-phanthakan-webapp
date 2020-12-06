@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/selectPlace.css" />
+    <script src="scripts/selectPalce.js"></script>
+  </head>
+
+  <body>
+    <ul>
+      <li class="left-content">ระบบนัด PCU</li>
+      <a href="login.html"><li class="right-content">ล็อกเอ้าท์</li></a>
+      <a href="admin.html"><li class="right-content">หน้าแรก</li></a>
+    </ul>
+    <img src="images/8507.jpg" class="mainPic" />
+    <div class="topic">
+      <p class="placeForService" style="color: black;" >สถานบริการที่ 1</p>
+    </div>
+    <p>
+      ——————————————————————————————————————————————————————————————————————————————————
+    </p>
+    <div class="main-content">
+      <div class="templateFunc">
+        <div class="insideTemplateFunc"><p class="stylePlace">แก้ไขเวลา </p></div>
+        <div>
+          <img src="images/picture (1).svg" class="setPlacePic2" />
+          <div class="flexDirectColumn"><button class="checkBut" id="timerChanger">กำหนดเปิด</button>
+            <button class="checkBut">กำหนดปิด</button></div>
+        </div>
+      </div>
+      <div class="templateFunc">
+        <div class="insideTemplateFunc"><p class="stylePlace">ตรวจสอบนัดผู้ป่วย </p></div>
+        <div>
+          <img src="images/checklist.svg" class="setPlacePic" />
+          <div class="flexDirectColumn"><button class="checkBut" id="clientButton" >ตรวจสอบ</button>
+            </div>
+        </div>
+      </div>
+      <div class="templateFunc">
+        <div class="insideTemplateFunc"><p class="stylePlace">ตารางการทำงานแพทย์</p></div>
+        <div>
+          <img src="images/calendar.svg" class="setPlacePic2" />
+          <div class="flexDirectColumn"><button class="checkBut">จัดการตารางของแพทย์</button>
+            <button class="checkBut">ตรวจสอบ</button></div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="bg-timeModal">
+      <div class="container-contents">
+        <div class="container">
+          <div class="headBox">
+              <p>สถานบริการที่ 1</p>
+          </div>
+          <div class="close-timerChange">+</div>
+
+          <label id="dateLabel">วันเปิดทำการ:</label>
+          <div class="date">
+              <label>Date</label> 
+              <input type="date" id="dateOpen">
+          </div>
+          
+          <label id="timeLabel">กำหนดเวลาเปิด-ปิด:</label>
+          <div class="timer">
+              <label>Time</label>
+              <input type="time" id="openTime">
+              <label>ถึง</label>
+              <label>Time</label>
+              <input type="time" id="closeTime">
+      
+          </div>
+
+          <div class="staff">
+              <label id="staffLabel">จำนวนแพทย์ประจำวัน:</label>
+              <input type="text" class="countStaff">
+              <label>คน</label>
+      
+          </div>
+
+          <div class="button">
+              <button id="cancle">ยกเลิก</button>
+              <button id="submit" onclick="alert('ตั้งค่าเสร็จสิ้น')">ตกลง</button>
+          </div>
+                                            
+        </div>
+      </div>
+    </div>
+    <div class="bg-clientModal">
+      <div class="client-contents">
+        <div class="client">
+          <div class="headBox">
+              <p>ตรวจสอบนัดผู้ป่วย</p>
+          </div>
+          <div class="close-client">+</div>
+
+          <label class="clientLabel">รหัสบัตรประชาชน:</label>
+          <input type="text" class="client-id">
+
+          <label class="clientLabel">ตรวจสอบรายเดือน:</label>
+          <input type="month" class="client-month">
+          
+          <div class="button">
+            <button id="client-submit" onclick="alert('ตรวจสอบเสร็จสิ้น')">ตกลง</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
