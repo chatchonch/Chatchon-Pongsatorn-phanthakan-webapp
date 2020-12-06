@@ -34,6 +34,7 @@ ul {
   }
 
 
+
 .loginTab{
     width: 50vw;
     height: 100%;
@@ -140,8 +141,8 @@ button:hover {
 .hospital{
     width: 15vw;
     height: 15vw;
-    margin-top: 50%;
-    margin-left: 10%;
+    margin-top: 40%;
+    margin-left: 20%;
 }
 
 .choosePlaceTag{
@@ -459,18 +460,18 @@ select {
 
 .modal_centent{
     width: 700px;
-    height: 500px;
+    height: 400px;
     background-color: white;
     border-radius: 20px;
     display: flex ;
     flex-direction: column;
     position: relative;
-    border: 1px solid black;
+    border: 0.5px solid black;
   }
 
   .tab_modal{
     background-color: #3a6933;
-    width: 700px;
+    width: 500px;
     height: 50px;
     border-radius: 20px 20px 0 0;
     color: white;
@@ -484,6 +485,8 @@ select {
     transform: rotate(45deg);
     cursor: pointer;
   }
+
+  
 
   .box_from{
     margin-top: 100px;

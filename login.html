@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-signin-client_id" content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="334410052801-6k1p80rk7gh4e9nh6lvlgn5sco5r1233.apps.googleusercontent.com">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/responsive.css">
-    <script src="scripts/login.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -14,6 +13,7 @@
     <title>Login</title>
   </head>
   <body>
+    
     <div class="loginTab">
       <div class="loginLeft">
         <img src="images/hospital.png" class="hospital" />
@@ -21,10 +21,10 @@
       <div class="loginRight">
         <p class="welcomeText">ยินดีต้อนรับ</p>
         <form id="myForm">
-          <label for="username" id="username">Username :</label>
+          <label for="username" id="username">รหัสผู้ใช้งาน :</label>
           <input type="text" id="username" name="username">
           <br>
-          <label for="password" id="password">Password :</label>
+          <label for="password" id="password">รหัสผ่าน :</label>
           <input type="password" id="password" name="password">
           <label class="forgetPassword"
             ><a href="https://www.w3schools.com" class="aforLogin"
@@ -75,7 +75,6 @@
     </div>
   </body>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
   <script>
     let submitBtm = document.getElementById("submit-button");
     submitBtm.addEventListener('click', () => {
@@ -90,27 +89,6 @@
         alert('Wrong username or password');
       }
   })
-  function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-  console.log('Token: ' + googleUser.getAuthResponse().id_token);
-  window.location.href = 'homepage.html'
-}
-  // function signOut() {
-  //     var auth2 = gapi.auth2.getAuthInstance();
-  //     auth2.signOut().then(function () {
-  //       auth2.disconnect();
-  //       console.log('User signed out.');
-  //     });
-  //   }
-  
-  // function onload() {
-  //   gapi.load('auth2', function() {
-  //     gapi.auth2.init();
-  //   })
-  // }
   </script>
+  <script src="js/popup.js"></script>
 </html>

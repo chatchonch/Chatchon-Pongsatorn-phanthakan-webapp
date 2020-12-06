@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #3a6933;
+}
+
+li {
+display: block;
+color: white;
+text-align: center;
+padding: 20px 30px;
+text-decoration: none;
+}
+
+.right-content {
+  float: right;
+  font-size: 1.25rem;
+  
+  
+}
+
+#right-content{
+float: right;
+font-size: 1.25rem;
+}
+
+.left-content {
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: default;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+
+
+.right-content:hover {
+  cursor: pointer;
+}
+
+.topic {
+text-align: center;
+border: 1px solid black;
+width: 25%;
+margin: -10vw auto 0;
+border-radius: 500px;
+background-color: white;
+
+}
+
+.mainPic {
+top: 0;
+left: 0;
+position: relative;
+width: 80vw;
+height: 50vw;
+z-index: -1;
+}
+
+.main-content {
+display: flex;
+}
+
+.main-content > * {
+flex: 1 1 0;
+}
+
+.placeForService{
+font-size: 1.2rem;
+font-weight: bold;
+}
+
+.templateFunc{
+height: 40vw;
+margin: 5vw;
+border: 1px solid black;
+border-radius: 3vw;
+background-color: white;
+display: flex;
+flex-direction: column;
+-webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+-moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+
+}
+
+.insideTemplateFunc{
+height: 70px;
+border-radius: 3vw 3vw 0 0 ;
+background-color: #3a6933;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.setPlacePic{
+margin-top: 7%;
+width: 70%;
+height: 100%;
+}
+
+
+.textDetailPlace{
+color: gray;
+font-size: 1.25rem;
+}
+
+.manageBut{
+background-color: orange;
+width: 30%;
+height: 10%;
+font-size: 1rem;
+border-radius: 20px;
+margin-top: 10%;
+}
+
+button:hover {
+cursor: pointer;
+opacity: 0.5;
+}
+
+.stylePlace{
+color: white;
+font-size: 1.5rem;
+}
+
+.checkBut{
+border-radius: 2vw;
+outline: none;
+background-color: white;
+width: 15vw;
+height: 2.5vw;
+margin: 10px;
+border: 1px solid black;
+font-size: 1rem;
+margin-left: 7%;
+font-weight: bold;
+
+}
+
+.setPlacePic2{
+margin-top: 3%;
+width: 60%;
+height: 100%;
+}
+
+.bg-timeModal {
+width: 100%;
+height: 250%;
+background-color: rgb(0, 0, 0, 0.7);
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+display: none;
+}
+
+.container-contents {
+margin-top: 70%;
+width: 500px;
+height: 400px;
+background-color: white;
+border-radius: 20px;
+}
+
+.headBox {
+display: flex;
+height: 65px;
+margin-top: -30px;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+color: white;
+background-color: #3a6933;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.close-timerChange {
+display: block;
+float: right;
+margin-top: -60px;
+font-size: 42px;
+transform: rotate(45deg);
+cursor: pointer;
+color: white;
+}
+
+#dateLabel {
+display: block;
+float: left;
+margin-left: 45px;
+margin-top: 20px;
+font-size: 20px;
+
+}
+
+.date {
+margin-top: 18px;
+font-size: 20px;
+}
+
+.date input {
+width: 160px;
+height: 30px;
+text-align: center;
+font-size: 18px;
+}
+
+.date label {
+margin-right: 10px;
+}
+
+#timeLabel {
+display: block;
+float: left;
+margin-left: 30px;
+margin-top: 20px;
+font-size: 20px;
+}
+
+.timer {
+margin-left: 160px;
+font-size: 20px;
+}
+
+.timer input {
+margin-top: 18px;
+width: 160px;
+height: 30xp;
+text-align: center;
+font-size: 18px;
+}
+
+.timer label {
+margin-right: 10px;
+}
+
+#staffLabel {
+display: block;
+float: left;
+margin-left: 30px;
+margin-top: 20px;
+font-size: 20px;
+}
+.staff {
+font-size: 20px;
+}
+
+.countStaff {
+margin-top: 18px;
+width: 100px;
+height: 30px;
+text-align: center;
+font-size: 18px;
+}
+
+.button {
+margin: 30px;
+text-align: center;
+}
+
+.button button {
+margin: 30px 60px;
+width: 80px;
+height: 30px;
+font-size: 18px;
+border-radius: 20px;
+
+}
+
+#submit {
+background-color: #FFA500;
+}
+
+#cancle {
+background-color: white;
+}
+
+.bg-clientModal {
+width: 100%;
+height: 250%;
+background-color: rgb(0, 0, 0, 0.7);
+position: absolute;
+top: 0;
+display: flex;
+justify-content: center;
+display: none;
+}
+
+.client-contents {
+margin-top: 70%;
+width: 500px;
+height: 400px;
+background-color: white;
+border-radius: 20px;
+}
+
+.headBox {
+display: flex;
+height: 65px;
+margin-top: -30px;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+color: white;
+background-color: #3a6933;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.close-client {
+display: block;
+float: right;
+margin-top: -60px;
+font-size: 42px;
+transform: rotate(45deg);
+cursor: pointer;
+color: white;
+}
+
+.clientLabel {
+display: block;
+float: left;
+margin-left: 50px;
+margin-top: 20px;
+font-size: 20px;
+
+}
+
+.client-id {
+margin-top: 18px;
+margin-left: 7px;
+width: 180px;
+height: 30px;
+text-align: center;
+font-size: 18px;
+}
+
+.client-month {
+margin-top: 18px;
+width: 180px;
+height: 30px;
+text-align: center;
+font-size: 18px;
+}
+
+#client-submit {
+float: right;
+background-color: #FFA500;
+}

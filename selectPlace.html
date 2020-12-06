@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/selectPlace.css" />
-    <script src="scripts/selectPlace.js"></script>
-    <script src="scripts/login.js"></script>
+    <script src="scripts/selectPalce.js"></script>
   </head>
 
   <body>
     <ul>
       <li class="left-content">ระบบนัด PCU</li>
-      <a href="login.html"><li class="right-content">ออกจากระบบ</li></a>
+      <a href="login.html"><li class="right-content">ล็อกเอ้าท์</li></a>
       <a href="admin.html"><li class="right-content">หน้าแรก</li></a>
     </ul>
     <img src="images/8507.jpg" class="mainPic" />
@@ -27,7 +26,8 @@
         <div class="insideTemplateFunc"><p class="stylePlace">แก้ไขเวลา </p></div>
         <div>
           <img src="images/picture (1).svg" class="setPlacePic2" />
-          <div class="flexDirectColumn"><button class="checkBut" id="timerChanger">กำหนดเวลาเปิด-ปิด</button></div>
+          <div class="flexDirectColumn"><button class="checkBut" id="timerChanger">กำหนดเปิด</button>
+            <button class="checkBut">กำหนดปิด</button></div>
         </div>
       </div>
       <div class="templateFunc">
@@ -36,6 +36,15 @@
           <img src="images/checklist.svg" class="setPlacePic" />
           <div class="flexDirectColumn"><button class="checkBut" id="clientButton" >ตรวจสอบ</button>
             </div>
+        </div>
+      </div>
+      <div class="templateFunc">
+        <div class="insideTemplateFunc"><p class="stylePlace">ตารางการทำงานแพทย์</p></div>
+        <div>
+          <img src="images/calendar.svg" class="setPlacePic2" />
+          <div class="flexDirectColumn"><button class="checkBut">จัดการตารางของแพทย์</button>
+            <button class="checkBut">ตรวจสอบ</button></div>
+          
         </div>
       </div>
     </div>
@@ -65,14 +74,14 @@
 
           <div class="staff">
               <label id="staffLabel">จำนวนแพทย์ประจำวัน:</label>
-              <input type="number" class="countStaff" id="doctor">
+              <input type="text" class="countStaff">
               <label>คน</label>
       
           </div>
 
           <div class="button">
-              <button id="cancletime-button">ยกเลิก</button>
-              <button id="fixtime-button">ตกลง</button>
+              <button id="cancle">ยกเลิก</button>
+              <button id="submit" onclick="alert('ตั้งค่าเสร็จสิ้น')">ตกลง</button>
           </div>
                                             
         </div>
@@ -87,109 +96,16 @@
           <div class="close-client">+</div>
 
           <label class="clientLabel">รหัสบัตรประชาชน:</label>
-          <input type="text" class="client-id" id="SSN">
+          <input type="text" class="client-id">
+
+          <label class="clientLabel">ตรวจสอบรายเดือน:</label>
+          <input type="month" class="client-month">
           
           <div class="button">
-            <button id="submit-button" onclick="alert('ตรวจสอบเสร็จสิ้น')">ตกลง</button>
+            <button id="client-submit" onclick="alert('ตรวจสอบเสร็จสิ้น')">ตกลง</button>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-  <script>
-    let date = document.getElementById("dateOpen");
-    let openTime = document.getElementById("openTime");
-    let closeTime = document.getElementById("closeTime");
-    let doctor = document.getElementById("doctor");
-    let submitBtn = document.getElementById("fixtime-button");
-    let clearBtn = document.getElementById("cancletime-button");
-    let changeTimeBtn = document.getElementById("timerChanger");
-    let searchBtn = document.getElementById("submit-button");
-    let SSN = document.getElementById("SSN");
-
-    var firebaseConfig = {
-      apiKey: "AIzaSyBsm2OONg2-y0A53i0mhDrGaBv_EzNksRE",
-      authDomain: "myprojectpcu.firebaseapp.com",
-      projectId: "myprojectpcu",
-      storageBucket: "myprojectpcu.appspot.com",
-      messagingSenderId: "653860991694",
-      appId: "1:653860991694:web:09b7de81d7b5f15d2b569f",
-      measurementId: "G-CB5P88YJ8G"
-    };
-
-    firebase.initializeApp(firebaseConfig);
-    
-    var db = firebase.firestore();
-    var docRef = db.collection("สถานบริการที่ 1").doc("Time");
-
-    changeTimeBtn.addEventListener('click', function() {
-      docRef.get().then(function(doc) {
-        if (doc.exists) {
-            console.log("Document data:", doc.data());
-            date.value = doc.data().date;
-            openTime.value = doc.data().openTime;
-            closeTime.value = doc.data().closeTime;
-            doctor.value = doc.data().doctor
-        } else {
-          // doc.data() will be undefined in this case
-          console.log("No such document!");
-        }
-    }).catch(function(error) {
-        console.log("Error getting document:", error);
-});
-    })
-
-    submitBtn.addEventListener('click', function() {
-      setData();
-      addDataToFireBase();
-})
-
-    clearBtn.addEventListener('click', function() {
-      date.value = '';
-      openTime.value = '';
-      closeTime.value = '';
-      doctor.value = '';
-      setData();
-      addDataToFireBase();
-    })
-
-    searchBtn.addEventListener('click', function() {
-      SSN = SSN.value;
-      db.collection("สถานบริการที่ 1").doc(SSN).get().then(function(doc) {
-        if (doc.exists) {
-          console.log("Document data:", doc.data());
-        }
-        else {
-          // doc.data() will be undefined in this case
-          console.log("No such document!");
-        }
-      }).catch(function(error) {
-        console.log("Error getting document:", error);
-});
-    })
-
-function addDataToFireBase() {
-  db.collection("สถานบริการที่ 1").doc("Time").set({
-        date: date,
-        openTime: openTime,
-        closeTime: closeTime,
-        doctor: doctor,
-      })
-      .then(function(docRef) {
-      console.log("Document written with ID: ", docRef.id);
-      })
-      .catch(function(error) {
-        console.error("Error adding document: ", error);
-      })
-}
-
-function setData() {
-  date = date.value;
-  openTime = openTime.value;
-  closeTime = closeTime.value;
-  doctor = doctor.value;
-}
-</script>
 </html>

@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-signin-client_id" content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
-    <link rel="stylesheet" href="styles/clientSelectPlace.css" />
-    <script src="scripts/login.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <ul>
-      <li class="left-content">ระบบนัด PCU</li>  
-      <a href="login.html"><li class="right-content" onclick="signOut()">ออกจากระบบ</li></a>
-      <a href="homepage.html"><li class="right-content">หน้าแรก</li></a>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/clientSelectPlace.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+    <li class="left-content">ระบบนัด PCU</li>
+    <a href="login.html">
+      <li class="right-content">ล็อกเอ้าท์</li>
+    </a>
+    <a href="homepage.html">
+      <li class="right-content">หน้าแรก</li>
+    </a>
+  </ul>
+  </div>
+  <div class="choosePlaceTag">
+    <div class="greenHead">
+      <p class="textBook">จองคิวนัด</p>
     </div>
-    <div class="choosePlaceTag">
-      <div class="greenHead"><p class="textBook">จองคิวนัด</p></div>
-      <div class="flexDirectRow">
-        <div>
-          <img src="images/health-report.png" class="picRepoert" />
-        </div>
-        <div class="flexDirectColumn">
-          <div class="seperateInputandSelect">
-            <form>
-              <label class="labelChoosePlace">เลือกสถานบริการ:</label>
-              <select id="places" name="placelist" form="placeForm">
-                <option value="สถานบริการที่ 1">สถานบริการที่ 1</option>
-                <option value="สถานบริการที่ 2">สถานบริการที่ 2</option>
-                <option value="สถานบริการที่ 3">สถานบริการที่ 3</option>
-              </select>
-            </form>
-          </div>
-          <div class="inputPosition">
-            <form>
-              <label class="labelChoosePlace">ชื่อ:</label>
-              <input
-                type="text"
-                id="fname"
-                placeholder="ชื่อของคุณ..."
-                style="font-size: 1rem"
-              />
-            </form>
-            <div class="space"></div>
-            <form>
-              <label class="labelChoosePlace">สกุล:</label>
-              <input
-                type="text"
-                id="lname"
-                placeholder="นามสกุลของคุณ..."
-                style="font-size: 1rem"
-              />
-            </form>
-          </div>
-          <div class="inputPosition2">
-            <label class="labelChoosePlace">เลขบัตรประชาชน:</label>
-            <form>
-              <input
-                type="text"
-                id="ssn"
-                placeholder="เลขบัตรประชาชนของคุณ..."
-                style="font-size: 1rem"
-              />
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="formSymtons">
-        <div class="listSymton">ช่วงเวลาจอง</div>
-        
-
-      </div>
-      <p class="another_Symtons">กรอกอาการเพิ่มเติม:</p>
-      <textarea class="textSymtons"></textarea>
+    <div class="flexDirectRow">
       <div>
-        <button class="acceptBut" id="submit-button">ยืนยัน</button>
-        <button class="cancelBut" onclick="window.location.href='homepage.html'">ยกเลิก</button>
+
+      </div>
+      <div class="flexDirectColumn">
+        <div class="seperateInputandSelect">
+          <form>
+            <label class="labelChoosePlace">เลือกสถานบริการ:</label>
+            <select id="places" name="placelist" form="placeForm" class="places">
+              <option value="สถานบริการที่ 1">สถานบริการที่ 1</option>
+              <option value="สถานบริการที่ 2">สถานบริการที่ 2</option>
+              <option value="สถานบริการที่ 3">สถานบริการที่ 3</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="inputPosition">
+          <form class="flexDirectColumn">
+            <label class="labelName">ชื่อ:</label>
+            <input type="text" id="fname" placeholder="ชื่อของคุณ..." class="fname_input" />
+
+            <div class="space"></div>
+
+            <label class="labelName">สกุล:</label>
+            <input type="text" id="lname" placeholder="นามสกุลของคุณ..." class="lname_input" />
+          </form>
+        </div>
+        <div class="inputPosition2">
+          <label class="labelName">เลขบัตรประชาชน:</label>
+          <form>
+            <input type="text" id="ssn" placeholder="เลขบัตรประชาชนของคุณ..." class="lname_input" />
+          </form>
+        </div>
+
+        <div class="inputPosition2">
+          <label class="labelName">หมายเลขโทรศัพท์:</label>
+          <form>
+            <input type="text" id="phone" placeholder="หมายเลขโทรศัพท์ของคุณ..." class="phone_input" />
+          </form>
+        </div>
       </div>
     </div>
-  </body>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+    <div class="formSymtons">
+      <div class="listSymton">ช่วงเวลาจอง</div>
+      <br>
+      <div class="flexDirectColumn"> 
+        <div class="appointment_label">
+        <label for="appointment" class="date_appointment_label">เลือกวันที่นัด:</label>
+        <label for="appointment" class="time_appointment_label">เลือกเวลาที่นัด:</label>
+      </div>
+        <form class="flexDirectRow">
+          
+          <input type="date" id="date_appointment" name="date_appointment" class="date_appointment">
+          <select class="select_time_appointment">
+            <option value="time1">09.00</option>
+            <option value="time2">09.15</option>
+            <option value="time3">09.30</option>
+            <option value="time4">09.45</option>
+            <option value="time5">10.00</option>
+
+          </select>
+        </form>
+        
+      </div>
+
+    </div>
+    <p class="another_Symtons">กรอกอาการเพิ่มเติม:</p>
+    <textarea class="textSymtons"></textarea>
+    <div>
+      
+      <button class="cancelBut" onclick="window.location.href='homepage.html'">ยกเลิก</button>
+      <button class="acceptBut" id="submit-button">ยืนยัน</button>
+    </div>
+    <br><br>
+  </div>
+  <br><br><br><br><br><br>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
 <script>
   var d = new Date();
   var date = `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`
@@ -106,24 +121,29 @@
 
   var db = firebase.firestore();
   let submitBtm = document.getElementById('submit-button');
-  submitBtm.addEventListener('click', function() {
+  submitBtm.addEventListener('click', function () {
     let location = document.getElementById('places').value;
     let firstname = document.getElementById('fname').value;
     let lastname = document.getElementById('lname').value;
     let SSN = document.getElementById('ssn').value;
-    db.collection(location).doc(SSN).set({
+    console.log(location);
+    console.log(firstname);
+    console.log(lastname);
+    console.log(SSN);
+    db.collection(location).doc(date).set({
       date: date,
       firstname: firstname,
       lastname: lastname,
       ssn: SSN,
       location: location
     })
-    .then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-})
-    .catch(function(error) {
-      console.error("Error adding document: ", error);
-    });
+      .then(function (docRef) {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function (error) {
+        console.error("Error adding document: ", error);
+      });
   })
-  </script>
+</script>
+
 </html>
