@@ -1,115 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="js/js.js" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <script src="js/popup.js"></script>
-    <title>Login</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li class="topic">ระบบนัดหน่วยบริการปฐมภูมิ มหาวิทยาลัยขอนแก่น</li>
-        <li style="float: right">
-          <a class="active" href="#English">English</a>
-        </li>
-      </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-signin-client_id"
+    content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/login.js"></script>
+  <script src="scripts/popup.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="loginTab">
+    <div class="loginLeft">
+      <img src="images/hospital.png" class="hospital" />
     </div>
-    <div class="loginTab">
-      <div class="loginLeft">
-        <img src="images/hospital.png" class="hospital" />
-      </div>
-      <div class="loginRight">
-        <p class="welcomeText">ยินดีต้อนรับ</p>
-        <form>
-          <label for="fname" id="fname">อีเมลล์</label>
-          <input
-            type="text"
-            id="email"
-            name="Email"
-            placeholder="KKU อีเมลล์ของคุณ..."
-          />
-          <br />
-          <label for="lname" id="lname">รหัสผ่าน</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="รหัสผ่านของคุณ..."
-          />
-          <label class="forgetPassword"
-            ><a href="https://www.w3schools.com" class="aforLogin"
-              >ลืมรหัสผ่าน?</a
-            ></label
-          >
-        </form>
-        <div class="typeLogin">
-          <button type="submit" class="buttonSubmit" onclick="alert('Welcome')">
-            เข้าสู่ระบบ
-          </button>
-          <div class="or">หรือ</div>
-          <div><img src="images/facebook.png" class="accountLogin" /></div>
-          <div><img src="images/search.png" class="accountLogin" /></div>
-          <button
-            type="submit"
-            class="facebook_Button"
-            onclick="alert('Welcome')"
-          >
-            เข้าสู่ระบบด้วย Facebook
-          </button>
+    <div class="loginRight">
+      <p class="welcomeText">ยินดีต้อนรับ</p>
+      <form id="myForm">
+        <div class="for_normal">
+        <div class="for_patient">สำหรับผู้ป่วย</div>
+          <div class="g-signin2" style="margin-left: 100px; padding-top: 30px;" data-onsuccess="onSignIn"></div>
+          
+          
+            <a onclick="myFunction()" class="aforLogin"> เข้าสู่ระบบโดยไม่ใช้รหัสผ่าน</a>
+          
+          
+        </div>
+        <div>________________________________________________</div>
+        <div class="admin_login">สำหรับผู้ดูแล</div>
+        <label for="username" id="username">รหัสผู้ใช้งาน :</label>
+        <input type="text" id="username" name="username">
+        
 
-          <button
-            type="submit"
-            class="google_Button"
-            onclick="alert('Welcome')"
-          >
-            เข้าสู่ระบบด้วย Google
-          </button>
-        </div>
-        <div class="noAccount">
-          <a onclick="myFunction()" class="aforLogin"
-            >เข้าสู่ระบบโดยไม่ใช้รหัสผ่าน</a
-          >
-        </div>
+        <label for="password" id="password">รหัสผ่าน :</label>
+        <input type="password" id="password" name="password">
+        
+      </form>
+      <div class="typeLogin">
+        <button type="submit" class="buttonSubmit" id="submit-button">
+          เข้าสู่ระบบ
+        </button>
       </div>
+
+
+      <div class="space_below"></div>
     </div>
-    <div class="bg_model">
-      <div class="modal_centent">
-        <div class="tab_modal">
-          <div class="closePopup" onclick="closePopup()">+</div>
-          <div class="box_from">
-          <from class="element_form">
-            <label id="ssn_label">เลขบัตรประชาชน:</label
-            ><input
-              type="text"
-              placeholder="กรอกเลขเลขบัตรประชาชนของคุณ..."
-              id="ssn_input"
-            />
-
-            
-          </from>
-
+  </div>
+  <div class="space_below"></div>
+  <div class="bg_model">
+    <div class="modal_centent">
+      <div class="tab_modal">
+        <div class="closePopup" onclick="closePopup()">+</div>
+        <div class="box_from">
           <form class="element_form">
-            <label id="phone_label">เบอร์โทรศัพท์:</label
-            ><input
-              type="text"
-              placeholder="กรอกเบอร์โทรศัพท์ของคุณ..."
-              id="phone_input"
-            />
+            <label id="ssn_label">เลขบัตรประชาชน:</label><input type="text" placeholder="กรอกเลขเลขบัตรประชาชนของคุณ..."
+              id="ssn_input" />
+          </form>
+          <form class="element_form">
+            <label id="phone_label">เบอร์โทรศัพท์:</label><input type="text" placeholder="กรอกเบอร์โทรศัพท์ของคุณ..."
+              id="phone_input" />
           </form>
           <button class="Nopassword_button_submit">ยืนยัน</button>
         </div>
-        </div>
       </div>
     </div>
+  </div>
+</body>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+<script>
+  let submitBtm = document.getElementById("submit-button");
+  submitBtm.addEventListener('click', () => {
+    let name = document.getElementById("myForm").elements[0].value;
+    let password = document.getElementById("myForm").elements[1].value;
+    console.log(name);
+    console.log(password);
+    if (name == "admin" && password == "admin") {
+      window.location.href = "admin.html";
+    }
+    else {
+      alert('Wrong username or password');
+    }
+  })
+</script>
 
-    
-  </body>
 </html>
