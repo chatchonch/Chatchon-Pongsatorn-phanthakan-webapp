@@ -17,7 +17,7 @@ bootstrap.min.css'>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
-let calendar = function(result) {
+let calendar = function(results) {
       $(document).ready(function() {
     $('#calendar').fullCalendar({
       header: {
@@ -29,9 +29,7 @@ let calendar = function(result) {
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
-           events: [
-               result
-      ],
+           events: results,
       eventClick: function(calEvent, jsEvent, view, resourceObj) {
           swal({
             title: calEvent.title,
@@ -55,7 +53,7 @@ let calendar = function(result) {
   <ul>
     <li class="left-content">ระบบนัด PCU</li>
     <a href="login.html"><li class="right-content" onclick="signOut()">ออกจากระบบ</li></a>
-    <a href="homepage.html"><li class="right-content">หน้าแรก</li></a>
+    <a href="admin.html"><li class="right-content">หน้าแรก</li></a>
   </ul>
   <div id='calendar'></div>
 </body>

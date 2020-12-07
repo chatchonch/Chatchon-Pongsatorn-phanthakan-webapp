@@ -19,7 +19,6 @@ window.onload = function() {
     appointmentBtn.addEventListener('click', function() {
         db.collection("สถานบริการที่ 1").doc("1409901234567").get().then(function(doc) {
         if (doc.exists) {
-            console.log("Document data:", doc.data());
             text.innerHTML = `${doc.data().firstname} ${doc.data().lastname} นัดตรวจที่ ${doc.data().location} วันที่ ${doc.data().dateAppointment}
             เวลา ${doc.data().timeAppointment}`;
             document.querySelector(".cancel_appointment").style.display = "flex";

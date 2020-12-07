@@ -19,8 +19,6 @@ window.onload = function() {
     let submitBtn = document.getElementById("fixtime-button");
     let clearBtn = document.getElementById("cancletime-button");
     let changeTimeBtn = document.getElementById("timerChanger");
-    let searchBtn = document.getElementById("submit-button");
-    let SSN = document.getElementById("SSN");
 
     var firebaseConfig = {
         apiKey: "AIzaSyBsm2OONg2-y0A53i0mhDrGaBv_EzNksRE",
@@ -39,7 +37,6 @@ window.onload = function() {
     changeTimeBtn.addEventListener('click', function() {
       docRef.get().then(function(doc) {
         if (doc.exists) {
-            console.log("Document data:", doc.data());
             date.value = doc.data().date;
             openTime.value = doc.data().openTime;
             closeTime.value = doc.data().closeTime;
@@ -66,21 +63,6 @@ window.onload = function() {
       doctor.value = '';
       setData();
       addDataToFireBase();
-    })
-
-    searchBtn.addEventListener('click', function() {
-      SSN = SSN.value;
-      db.collection("สถานบริการที่ 1").doc(SSN).get().then(function(doc) {
-        if (doc.exists) {
-          console.log("Document data:", doc.data());
-        }
-        else {
-          // doc.data() will be undefined in this case
-          console.log("No such document!");
-        }
-      }).catch(function(error) {
-        console.log("Error getting document:", error);
-});
     })
 
 function addDataToFireBase() {
