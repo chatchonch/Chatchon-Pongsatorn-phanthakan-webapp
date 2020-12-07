@@ -1,90 +1,84 @@
-.column_flex{
-    display: flex;
-    flex-direction: column;
-}
-
-.row_flex{
-    display: flex;
-    flex-direction: row;
-}
-
-.name_patient{
-    font-size: 2.5rem;
-    color: rgb(66, 65, 65);
-    margin-top: 8vw;
-    margin-left: 10vw;
-    
-}
-
-.table_patient{
-    border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-    border: 0.5px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+body {
+    margin: 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a6933;
   }
   
-  tr:nth-child(even) {
-    background-color: #dddddd;
+  li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
   }
 
+  .right-content {
+      float: right;
+      font-size: 1.25rem;
+     
+      
+  }
 
-.green_head_table{
-    background-color: #3a6933;
+  #right-content{
+    float: right;
+    font-size: 1.25rem;
+  }
+
+  .left-content {
+      float: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: default;
+  }
+  
+  li a {
+    display: block;
+    color: white;
     text-align: center;
-    color: white;
-    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+
+  .right-content:hover {
+      cursor: pointer;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+  .hoverEffect {
+    font-size: 29px;
+    position: absolute;
+    margin: 30px 55px;
+    cursor: pointer;
 }
-
-.ssn_head_table, .fname_head_table, .lname_head_table, .phone_head_table, .date_head_table, .place_head_table{
-    width: 15%;
-    background-color: #3a6933;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
+.ui-datepicker-trigger
+{
+  background: transparent;
+    border: none;
+    margin: 0!important;
+    padding: 0!important;
 }
-
-
-
-
-.table{
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 5vw;
+.datetimepicker .input-group-addon {
+    background-color: #f9f9f9;
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    height: 2.1em;
+    border: 1px solid #ccc;
+    
 }
-
-.ssn_to_find{
-    width: 15vw;
-    height: 2.5vw;
-    margin-left: 1vw;
-    margin-top: 1vw;
-
-    font-size: 1rem;
-}
-
-.find_ssn_box{
-    border: 0.5px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: 15vw;
-    width: 25vw;
-    height: 5vw;
-    margin-top: 6vw;
-    background-color:rgb(226, 225, 225);
-    display: flex;
-    flex-direction: row;
-}
-
-.find_but{
-    width: 100px;
-    height: 35px;
-    margin-top: 20px;
-    margin-left: 10px;
-    background-color: #3a6933;
-    color: white;
-    outline: none;
-    border-radius: 10px;
+.fc-state-default.fc-corner-right
+{
+  border-radius: 0px;
 }
