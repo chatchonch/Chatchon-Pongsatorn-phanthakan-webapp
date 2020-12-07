@@ -421,7 +421,8 @@ select {
 .for_patient{
     font-size: 1rem;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 15vw;
+    font-weight: bold;
     
 }
 
@@ -434,13 +435,15 @@ select {
 .admin_login{
     margin-top: 1.5vw;
     margin-left: 1.5vw;
+    font-weight: bold;
+    font-size: 1rem;
     
 }
 
 .aforLogin{
     color: rgb(83, 81, 81);
     text-decoration: underline;
-    margin-left: 4.25vw;
+    
     margin-top: 1vw;
     font-size: 1rem;
    
@@ -535,4 +538,9 @@ select {
     background-color: rgb(230, 223, 223);
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .g-signin2{
+      margin-top: 5%;
   }
