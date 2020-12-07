@@ -86,7 +86,7 @@ ul {
 .templateFunc{
     height: 40vw;
     margin: 5vw;
-    border: 1px solid black;
+    border: 0.5px solid black;
     border-radius: 3vw;
     background-color: white;
     display: flex;
@@ -138,4 +138,126 @@ button:hover {
     font-weight: bold;
     text-align: center;
     color: white;
+}
+
+@media only screen and (max-width: 600px){
+    .left-content {
+       
+        font-size: 0.8rem;
+        
+    }
+    .right-content{
+        font-size: 0.8rem;
+    }
+
+    .mainPic{
+        display: none;
+        
+    }
+
+    .topic{
+        margin-top: 10%;
+       
+        width: 50%;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        height: auto
+        
+    }
+    
+    .templateFunc{
+        
+        margin-top: 10vw;
+        width: 70%;
+        height: 100%;
+        margin-left: 15% ;
+    }
+
+    .insideTemplateFunc{
+        height: auto;
+        width: 100%;;
+    }
+
+    .setPlacePic{
+        width: 50%;
+        
+    }
+
+    .manageBut{
+        width: 30%;
+        margin-bottom: 10%;
+    }
+}
+
+@media  only screen and (min-width: 600px)  and (max-width:768px){
+    ul{
+        width: 100%;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .templateFunc{
+        width: 100%;
+        height: 100%;
+    }
+
+    .insideTemplateFunc{
+        height: 15%;
+    }
+
+    .textDetailPlace{
+        font-size: 70%;
+    }
+
+    .manageBut{
+        width: 50%;
+        height: 15%;
+        margin-bottom: 10%;
+    }
+
+    .placeToservice{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px)  and (max-width:1024px){
+    ul{
+        width: 100%;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .templateFunc{
+        width: 100%;
+        height: 100%;
+    }
+
+    .insideTemplateFunc{
+        height: 15%;
+    }
+
+    .textDetailPlace{
+        font-size: 70%;
+    }
+
+    .manageBut{
+        width: 50%;
+        height: 15%;
+        margin-bottom: 10%;
+    }
+
+    .placeToservice{
+        font-size: 100%;
+    }
 }
