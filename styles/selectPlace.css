@@ -844,11 +844,10 @@
   }
 
   .setPlacePic{
-  margin-top: 10%;
-  margin-bottom: 23px;
+  margin-top: 3%;
   width: 70%;
-  height: 65%;
-  display: none;
+  height: 25%;
+
   }
 
 
@@ -892,9 +891,8 @@
 
   .setPlacePic2{
   margin-top: 3%;
-  width: 60%;
-  height: 100%;
-  display: none;
+  width: 35%;
+  height: 35%;
   }
 
   .bg-timeModal {
