@@ -1,3 +1,4 @@
+@media only screen and (orientation: landscape ) and (min-width:1024px) {
 body {
   margin: 0;
   text-align: center;
@@ -329,4 +330,668 @@ flex-direction: column;
 display: flex;
 }
 
+}
 
+@media only screen and (min-width:601px) and (max-width:1024px){
+  body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a6933;
+  }
+  
+  li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+  
+  .right-content {
+      float: right;
+      font-size: 1.25rem;
+     
+      
+  }
+  
+  .date_appointment{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+   margin: 20px;
+  }
+  
+  .select_time_appointment{
+    
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+    margin: 20px;
+  
+  }
+  
+  
+  #right-content{
+    float: right;
+    font-size: 1.25rem;
+  }
+  
+  .left-content {
+      float: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  #topic {
+    text-align: center;
+    border: 1px solid black;
+    width: 40%;
+    margin: -10vw auto 30px;
+    border-radius: 500px;
+    background-color: white;
+    
+  }
+  
+  img {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 80vw;
+    height: 50vw;
+    z-index: -1;
+  }
+  
+  .flexDirectRow{
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .flexDirectColumn{
+    display: flex ;
+    flex-direction: column;
+  }
+  
+  .main-content {
+  display: flex;
+  }
+  
+  .main-content > * {
+  flex: 1 1 0;
+  }
+  
+  .greenCircle{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    }
+  .main-image > img {
+    width: 150px;
+    height: 150px;
+    display: flex ;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .tab_ {
+    display: none;
+  }
+  
+  .topic-article{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .buttonOption{
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #FFA500;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    
+  }
+  
+  .space{
+    width: auto;
+    height: 5vw;
+  }
+  
+  .bg-model{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; 
+  }
+  
+  .bg-model2{
+    width: 100vw;
+    height: 80vw;
+    background-color:rgb(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; 
+  }
+  
+  
+  .modal-cententForAppointment{
+    width: 80vw;
+    height: 10vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex ;
+    flex-direction: row;
+    position: relative;
+  }
+  .text_appointment{
+    font-size: 1.25rem;
+    text-align: left;
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  }
+  
+  .cancel_appointment{
+  outline: none;
+    width: 10vw;
+    height: 2vw;
+    border-radius: 15px;
+    position: absolute;
+  top: 40%;
+  right: 16px;
+    text-align: center;
+    background-color: #FFA500;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .modal-centent{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex ;
+    flex-direction: column;
+    position: relative;
+    
+  }
+  .popupRubRongPad{
+    background-color: #3a6933;
+    width: 500px;
+    height: 80px;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    margin-top: -25px;
+    display: flex ;
+    flex-direction: row;
+  }
+  
+  .textRubRongPad{
+    font-size: 2rem;
+    margin: 20px auto;
+  
+  }
+  
+  .selectPopup{
+    font-size: 1rem;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    margin: 20px auto;
+  
+  
+  }
+  
+  .buttonSubmitPopup{
+    outline: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #FFA500;
+    font-size: 1rem;
+    font-weight: bold;
+    
+    
+    
+  }
+  
+  .cancelBut{
+  border-radius: 2vw;
+  outline: none;
+  background-color: rgb(204, 201, 201);
+  width: 6vw;
+  height: 2.5vw;
+  margin-top: 2%;
+  margin-left: 10vw;
+  font-size: 1.25rem;
+  
+  }
+  
+  .closePopup{
+  position: absolute;
+  top: 10;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  }
+  
+  
+  .closePopup2{
+  position: absolute;
+  top: 10;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  }
+  
+  .box_name{
+  margin-top: 0.5vw;
+  }
+  
+  .box_SSN{
+  margin-top: 2vw;
+  flex-direction: column;
+  display: flex;
+  }
+  
+  .element_RudRongPad{
+  flex-direction: column;
+  display: flex;
+  }
+  
+  .style_box{
+  width: 200px;
+  height: 40px;
+  font-size: 1rem;
+  margin: 10px auto;
+
+  }
+  
+  .label_box{
+  font-size: 1.5rem;
+  margin-left: -30vw;
+  margin-top: 15px;
+  
+  }
+  
+  .label_box_ssn{
+  font-size: 1.5rem;
+  margin-left: -16vw;
+  margin-top: 15px;
+  }
+  
+  .flexRow{
+  flex-direction: row;
+  display: flex;
+  }
+  
+  .flexColumn{
+  flex-direction: column;
+  display: flex;
+  }
+  
+  }
+
+  @media only screen and (max-width:600px) {
+    body {
+      margin: 0;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+    }
+    
+    ul {
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3a6933;
+    }
+    
+    li {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 20px 30px;
+      text-decoration: none;
+    }
+    
+    .right-content {
+        float: right;
+        font-size: 1.25rem;
+       
+        
+    }
+    
+    .date_appointment{
+      width: 200px;
+      height: 30px;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 2.5vw;
+    }
+    
+    .select_time_appointment{
+      
+      width: 100px;
+      height: 30px;
+      font-size: 1rem;
+      margin: 20px auto;
+    
+    }
+    
+    
+    #right-content{
+      float: right;
+      font-size: 1.25rem;
+    }
+    
+    .left-content {
+        float: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    
+    #topic {
+      text-align: center;
+      border: 1px solid black;
+      width: 50%;
+      margin: 0 auto;
+      border-radius: 500px;
+      background-color: white;
+      
+    }
+    
+    img {
+      top: 0;
+      left: 0;
+      position: relative;
+      width: 80vw;
+      height: 50vw;
+      z-index: -1;
+    }
+    
+    .flexDirectRow{
+      display: flex ;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    
+    .flexDirectColumn{
+      display: flex ;
+      flex-direction: column;
+    }
+    
+    .main-content {
+    width: 100%;
+    display: flex;
+    }
+    
+    .main-content > * {
+    flex: 1 1 0;
+    }
+    .greenCircle{
+      height: 25px;
+      width: 25px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: red;
+      }
+    .main-image > img {
+      width: 80px;
+      height: 80px;
+      display: flex ;
+      flex-direction: column;
+      margin: 15px auto;
+    }
+
+  .tab_ {
+    display: none;
+  }
+    
+    .topic-article{
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    
+    .buttonOption{
+      width: 90px;
+      height: 30px;
+      background-color: #FFA500;
+      border-radius: 20px;
+      font-size: 10px;
+      outline: none;
+      
+    }
+    
+    .space{
+      width: auto;
+      height: 5vw;
+    }
+    
+    .bg-model{
+      width: 100%;
+      height: 175%;
+      background-color: rgb(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      display: none;
+    }
+    
+    .bg-model2{
+      width: 100%;
+      height: 110%;
+      background-color:rgb(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none; 
+    }
+    
+    
+    .modal-cententForAppointment{
+      width: 80vw;
+      height: 80px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 30px;
+      display: flex ;
+      flex-direction: row;
+      position: relative;
+    }
+    .text_appointment{
+      font-size: 1.25rem;
+      text-align: left;
+      padding-top: 45px;
+      padding-left: 40px;
+      padding-right: 40px;
+      
+    }
+    
+    .cancel_appointment{
+    outline: none;
+      width: 80px;
+      height: 30px;
+      border-radius: 15px;
+      position: absolute;
+      top: 35%;
+      right: 50px;
+      text-align: center;
+      background-color: #FFA500;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+    .modal-centent{
+      width: 80%;
+      margin-top: 100px;
+      height: 450px;
+      background-color: white;
+      border-radius: 30px;
+      display: flex ;
+      flex-direction: column;
+      position: relative;
+      
+    }
+    .popupRubRongPad{
+      background-color: #3a6933;
+      width: 100%;
+      height: 50px;
+      border-radius: 20px 20px 0 0;
+      color: white;
+      margin-top: -25px;
+      display: flex ;
+      flex-direction: row;
+    }
+    
+    .textRubRongPad{
+      font-size: 1.25rem;
+      margin: 10px auto;
+    
+    }
+    
+    .selectPopup{
+      font-size: 1rem;
+      padding: 10px;
+      width: 200px;
+      margin: 10px auto;
+      
+      
+    
+    
+    }
+    
+    .buttonSubmitPopup{
+      outline: none;
+      width: 120px;
+      height: 30px;
+      border-radius: 15px;
+      text-align: center;
+      background-color: #FFA500;
+      font-size: 1rem;
+      font-weight: bold;
+      
+      
+      
+    }
+    
+    .cancelBut{
+    border-radius: 2vw;
+    outline: none;
+    background-color: rgb(204, 201, 201);
+    width: 6vw;
+    height: 2.5vw;
+    margin-top: 2%;
+    margin-left: 10vw;
+    font-size: 1.25rem;
+    
+    }
+    
+    .closePopup{
+    position: absolute;
+    top: 10;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    }
+    
+    
+    .closePopup2{
+    position: absolute;
+    top: 10;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    }
+    
+    .box_name{
+    margin-top: 0.5vw;
+    }
+    
+    .box_SSN{
+    margin-top: 2vw;
+    flex-direction: column;
+    display: flex;
+    }
+    
+    .element_RudRongPad{
+    flex-direction: column;
+    display: flex;
+    }
+    
+    .style_box{
+    width: 200px;
+    height: 25px;
+    font-size: 1rem;
+    margin: 10px auto;
+    
+    }
+    
+    .label_box{
+    font-size: 1rem;
+    margin-left: -60vw;
+    
+    }
+    
+    .label_box_ssn{
+    font-size: 1rem;
+    margin-left: -35vw;
+    }
+    
+    .flexRow{
+    flex-direction: row;
+    display: flex;
+    }
+    
+    .flexColumn{
+    flex-direction: column;
+    display: flex;
+    }
+    
+    }
