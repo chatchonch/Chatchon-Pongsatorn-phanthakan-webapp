@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a6933;
+  }
+  
+  li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+
+  .right-content {
+      float: right;
+      font-size: 1.25rem;
+     
+      
+  }
+
+  #right-content{
+    float: right;
+    font-size: 1.25rem;
+  }
+
+  .left-content {
+      float: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: default;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  .right-content:hover {
+      cursor: pointer;
+  }
+
+.topic {
+    text-align: center;
+    border: 1px solid black;
+    width: 25%;
+    margin: -10vw auto 0;
+    border-radius: 500px;
+    background-color: white;
+    
+}
+
+.mainPic {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 80vw;
+    height: 50vw;
+    z-index: -1;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content > * {
+  flex: 1 1 0;
+}
+
+.placeForService{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.templateFunc{
+    height: 40vw;
+    margin: 5vw;
+    border: 0.5px solid black;
+    border-radius: 3vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+    
+}
+
+.insideTemplateFunc{
+    height: 5vw;
+    border-radius: 3vw 3vw 0 0 ;
+    background-color: #3a6933;
+    
+    
+}
+
+.setPlacePic{
+    margin-top: 7%;
+    width: 70%;
+    height: 100%;
+}
+
+.textDetailPlace{
+    color: gray;
+    font-size: 1.25rem;
+}
+
+.manageBut{
+    background-color: orange;
+    width: 30%;
+    height: 10%;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-top: 10%;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.placeToservice{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    li{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 5px;
+        text-decoration: none;
+    }
+
+    .left-content {
+       
+        font-size: 0.8rem;
+        
+    }
+    .right-content{
+        font-size: 0.8rem;
+        margin: 0px 4px;
+        float: right;
+        
+    }
+
+    .mainPic{
+        display: none;
+        
+    }
+
+    .topic{
+        margin-top: 10%;
+       
+        width: 50%;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        height: auto
+        
+    }
+    
+    .templateFunc{
+        
+        margin-top: 10vw;
+        width: 70%;
+        height: 100%;
+        margin-left: 15% ;
+    }
+
+    .insideTemplateFunc{
+        height: auto;
+        width: 100%;;
+    }
+
+    .setPlacePic{
+        width: 50%;
+        
+    }
+
+    .manageBut{
+        width: 30%;
+        margin-bottom: 10%;
+    }
+}
+
+@media  only screen and (min-width: 600px)  and (max-width:768px){
+    ul{
+        width: 100%;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .templateFunc{
+        width: 100%;
+        height: 100%;
+    }
+
+    .insideTemplateFunc{
+        height: 15%;
+    }
+
+    .textDetailPlace{
+        font-size: 70%;
+    }
+
+    .manageBut{
+        width: 50%;
+        height: 15%;
+        margin-bottom: 10%;
+    }
+
+    .placeToservice{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px)  and (max-width:1024px){
+    ul{
+        width: 100%;
+    }
+
+    .tab{
+        display: none;
+    }
+
+    .templateFunc{
+        width: 100%;
+        height: 100%;
+    }
+
+    .insideTemplateFunc{
+        height: 15%;
+    }
+
+    .textDetailPlace{
+        font-size: 70%;
+    }
+
+    .manageBut{
+        width: 50%;
+        height: 15%;
+        margin-bottom: 10%;
+    }
+
+    .placeToservice{
+        font-size: 100%;
+    }
+}

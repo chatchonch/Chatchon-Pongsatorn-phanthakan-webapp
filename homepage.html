@@ -1,39 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="334410052801-fk6d3n1voh3df8tdaclpdut4t4mdct5i.apps.googleusercontent.com">
     <title>ระบบนัด PCU</title>
-    <link rel="stylesheet" href="styles/Home.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/admin.css">
+  </head>
+  <script src="scripts/popup.js"></script>
+  <script src="scripts/login.js"></script>
+  <script src="scripts/homepage.js"></script>
+  <body>
     <ul>
-        <li class="left-content">ระบบนัด PCU</li>
-        <li style="float:right"><a class="active" href="#English">English</a></li>
-        <li class="right-content">หน้าแรก</li>
-        <li class="right-content">ติดต่อเรา</li>
+      <li class="left-content">ระบบนัด PCU</li>
+      <a href="login.html"><li class="right-content" onclick="signOut()">ออกจากระบบ</li></a>
+      <a href="homepage.html"><li class="right-content">หน้าแรก</li></a>
     </ul>
-    <img src="images/8507.jpg">
+    <img src="images/8507.jpg" />
     <div class="topic">
-        <p class="topic-article">มีอะไรให้เราช่วยหรือไม่</p>
+      <p class="topic-article">มีอะไรให้เราช่วยหรือไม่</p>
     </div>
-    <p>——————————————————————————————————————————————————————————————————————————————————</p>
+    <p class="tab_">
+      ——————————————————————————————————————————————————————————————————————————————————
+    </p>
     <div class="main-content">
-        <div class="main-image">
-            <img src="images/doctor.svg">
-            <p>พบแพทย์</p>
-        </div>
-        <div class="main-image">
-            <img src="images/checklist.svg">
-            <p>ตรวจสอบนัด</p>
-        </div>
-        <div class="main-image">
-            <img src="images/immigration.svg">
-            <p>ขอใบรับรองแพทย์</p>
-        </div>
+      <table style="width: 100%">
+        <tr>
+          <td>
+            <div class="main-image">
+              <img src="images/doctor.png" />
+            </div>
+          </td>
+          <td>
+            <div class="main-image">
+              <img src="images/checklist.png" />
+            </div>
+          </td>
+          <td>
+            <div class="main-image">
+              <img src="images/immigration.png" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="buttonOption" onclick="window.location.href = 'clientSelectPlace.html'">พบแพทย์</button></td>
+          <td>
+            <button class="buttonOption" id="checkAppointment" onclick="checkAppointment()">
+              ตรวจสอบนัด
+            </button>
+          </td>
+          <td>
+            <button
+              id="Button_RudRongPad"
+              onclick="ask_report()"
+              class="buttonOption"
+            >
+              ขอใบรับรองแพทย์
+            </button>
+          </td>
+        </tr>
+      </table>
     </div>
-</body>
+    <div class="space"></div>
 
+    
+    <div class="bg-model2">
+      <div class="modal-cententForAppointment">
+        <div>
+          <div class="closePopup2" onclick="close_checkAppointment()">+</div>
+          <p class="text_appointment" id="text_appointment">
+          </p>
+        </div>
+        <button class="cancel_appointment" id="cancel_appointment">ยกเลิกนัด</button>
+      </div>
+    </div>
+
+    
+    <div class="bg-model">
+      <div class="modal-centent">
+        <div class="popupRubRongPad">
+          <p class="textRubRongPad">ขอใบรับรองแพทย์</p>
+          <div class="closePopup" onclick="close_ask_report()">+</div>
+        </div>
+        <select class="selectPopup" id="places">
+          <option value="สถานบริการที่ 1">สถานบริการที่ 1</option>
+          <option value="สถานบริการที่ 2">สถานบริการที่ 2</option>
+          <option value="สถานบริการที่ 3">สถานบริการที่ 3</option>
+        </select>
+        <div class="box_name">
+          <from class="element_RudRongPad">
+            <label class="label_box">ชื่อ:</label>
+            <input type="text" placeholder="กรอกชื่อของคุณ..." class="style_box" id="fname">
+            <label class="label_box">สกุล:</label>
+            <input
+              type="text"
+              placeholder="กรอกนามสกุลของคุณ..."
+              class="style_box"
+              id="lname"
+            />
+          
+            <label class="label_box_ssn">รหัสบัตรประชาชน:</label>
+            <input type="text" placeholder="กรอกรหัสบัตรประชาชนของคุณ..." class="style_box" id="SSN">
+            <div class="flexDirectRow"><input type="date" id="date_popup" name="date_appointment" class="date_appointment">
+              <select class="select_time_appointment" id="time_popup">
+                <option value="09:00">09:00</option>
+                <option value="09:15">09:15</option>
+                <option value="09:30">09:30</option>
+                <option value="09:45">09:45</option>
+                <option value="10:00">10:00</option></div>
+  
+            </select>
+          </form>
+
+          
+        </div>
+        <div>
+          <button class="buttonSubmitPopup" id="submitPopup">ยืนยัน</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
 </html>

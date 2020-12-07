@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css' rel='stylesheet' />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/
+bootstrap.min.css'>
+<link href='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/list_name.css">
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js'></script>
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js'></script>
+<script src='https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min
+.js'></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+let calendar = function(results) {
+      $(document).ready(function() {
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      },
+      defaultDate: '2018-03-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+           events: results,
+      eventClick: function(calEvent, jsEvent, view, resourceObj) {
+          swal({
+            title: calEvent.title,
+            text: "Start From : "+moment(calEvent.start).format("MMMM Do YYYY, h:mm a"),
+            icon: "success",
+          });
+      }
+    });
+    $(".fc-right .fc-button-group").append(
+          '<div class="input-group datetimepicker"><input type="text" class="form-control fc-datepicker" placeholder="YYYY-MM-DD" style="padding: 0;width: 0;border: none;margin: 0;"></div>');
+        $(".fc-datepicker").datepicker({
+          dateFormat: 'yy-mm-dd',
+          showOn: "button",
+          buttonText: '<span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>'
+        });
+  });
+}
+</script>
+</head>
+<body>
+  <ul>
+    <li class="left-content">ระบบนัด PCU</li>
+    <a href="login.html"><li class="right-content" onclick="signOut()">ออกจากระบบ</li></a>
+    <a href="admin.html"><li class="right-content">หน้าแรก</li></a>
+  </ul>
+  <div id='calendar'></div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+  <script src="/scripts/list_name.js"></script>
+</html>
+ 

@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a6933;
+  }
+  
+  li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+
+  .right-content {
+      float: right;
+      font-size: 1.25rem;
+     
+      
+  }
+
+  #right-content{
+    float: right;
+    font-size: 1.25rem;
+  }
+
+  .left-content {
+      float: left;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: default;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+
+  .right-content:hover {
+      cursor: pointer;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+  .hoverEffect {
+    font-size: 29px;
+    position: absolute;
+    margin: 30px 55px;
+    cursor: pointer;
+}
+.ui-datepicker-trigger
+{
+  background: transparent;
+    border: none;
+    margin: 0!important;
+    padding: 0!important;
+}
+.datetimepicker .input-group-addon {
+    background-color: #f9f9f9;
+    border-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    height: 2.1em;
+    border: 1px solid #ccc;
+    
+}
+.fc-state-default.fc-corner-right
+{
+  border-radius: 0px;
+}
