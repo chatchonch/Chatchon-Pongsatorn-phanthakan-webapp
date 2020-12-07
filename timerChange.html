@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Service locations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="styles/timerChange-style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li class="left-content">ระบบนัด PCU</li>
+                <li class="right-content"><a class="active" href="#English">English</a></li>
+                <li class="right-content">ติดต่อเรา</li>
+                <a href="../7/selectPlace.html"><li class="right-content" >หน้าแรก</li></a>
+            </ul>
+        </div>
+        <div class="container">
+
+            <div class="headBox">
+                <p>สถานบริการ 1</p>
+            </div>
+
+            <label id="dateLabel">วันเปิดทำการ:</label>
+            <div class="date">
+                <label>Date</label> 
+                <input type="date" id="dateOpen">
+            </div>
+            
+            <label id="timeLabel">กำหนดเวลาเปิด-ปิด:</label>
+            <div class="timer">
+                <label>Time</label>
+                <input type="time" id="openTime">
+                <label>ถึง</label>
+                <label>Time</label>
+                <input type="time" id="closeTime">
+        
+            </div>
+
+            <div class="staff">
+                <label id="staff">จำนวนแพทย์ประจำวัน:</label>
+                <input type="text" id="countStaff">
+                <label>คน</label>
+        
+            </div>
+
+            <div class="button">
+                <button id="cancle" onclick="window.location.href='../7/selectPlace.html'">ยกเลิก</button>
+                <button id="submit" onclick="window.location.href='../7/selectPlace.html', alert('ตั้งค่าเสร็จสิ้น')">ตกลง</button>
+            </div>
+                                               
+        </div>
+    </body>
+
+</html>
