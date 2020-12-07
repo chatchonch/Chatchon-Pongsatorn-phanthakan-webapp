@@ -11,7 +11,14 @@
         border-radius: 0%;
        
         
-        
+    
+    }
+
+    
+   
+
+    .long_Tab{
+        display: none;
     }
     
 
@@ -36,9 +43,11 @@
         font-size: 0.8rem;
     }
 
-    .forgetPassword{
-        margin-left: 67%;
+    .aforLogin{
+        margin-left: 20%;
     }
+
+  
 
     .buttonSubmit{
         width: 70%;
@@ -56,6 +65,7 @@
         font-size: 1rem;
         height: 30px;
         width: 50%;
+        margin-bottom: 100%;
        }
        .noAccount{
         width: 100%;
@@ -64,20 +74,26 @@
        }
 
        .modal_centent{
-        width: 80%;
+        width: 70%;
+
+        margin-bottom: 80%;
+    }
+
+    .element_form{
+        margin-top: -10%;
     }
     
     .tab_modal{
-        width: 80.5vw;
+        width: 100%;
         border-radius: 20px 20px 0px 0px;
-        margin-top: -1px;
-        margin-left: -1px;
+        
     
     }
+    
 
     .bg_model{
         width: 100%;
-        height: 100%;
+        height: 143%;
     }
 
     #ssn_input, #phone_input{
@@ -98,9 +114,21 @@
         
     }
 
+    .aforLogin{
+        width: 100%;
+        margin-left: 10%;
+    }
+
+   
+    .long_Tab{
+        display: none;
+    }
+
     .loginLeft{
         display: none;
     }
+
+    
 
     .loginRight{
         width: 100%;
@@ -182,11 +210,12 @@
        }
 
        .modal_centent{
-        width: 80%;
+        
+        height: 40%;
     }
     
     .tab_modal{
-        width: 80vw;
+        width: 80%;
         border-radius: 20px 20px 0px 0px;
         margin-top: -1px;
         margin-left: -0px;
@@ -220,10 +249,25 @@
         
     }
 
-    .loginLeft{
+    .aforLogin{
+        margin-left: 20%;
+    }
+
+    .for_normal{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .long_Tab{
         display: none;
     }
 
+    .loginLeft{
+        display: none;
+    }
+    .long_Tab{
+        display: none;
+    }
     .loginRight{
         width: 10%;
         height: 100%;
@@ -303,9 +347,11 @@
        .accountLogin{
            display: none
        }
-
+       
        .modal_centent{
-        width: 80%;
+        height: 30%;
+        width: 10%;
+        margin-bottom: 50%;
     }
     
     .tab_modal{
@@ -343,7 +389,9 @@
       
         
     }
-
+    .long_Tab{
+        display: none;
+    }
     .loginLeft{
         width: 100%;
         height: auto;
@@ -401,7 +449,9 @@
        }
 
        .modal_centent{
-        width: 80%;
+        width: 50%;
+        margin-bottom: 30%;
+        height: 40%;
     }
     
     .tab_modal{
@@ -436,6 +486,8 @@
       
         
     }
+
+    
 
     .loginLeft{
         width: 100%;
@@ -500,8 +552,9 @@
        }
 
        .modal_centent{
-        width: 60%;
-        height: 60%;
+        width: 40%;
+        height: 40%;
+        margin-bottom: 30%;
     }
     
     .tab_modal{
