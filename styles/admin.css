@@ -141,6 +141,14 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px){
+    li{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 5px;
+        text-decoration: none;
+    }
+
     .left-content {
        
         font-size: 0.8rem;
@@ -148,6 +156,9 @@ button:hover {
     }
     .right-content{
         font-size: 0.8rem;
+        margin: 0px 4px;
+        float: right;
+        
     }
 
     .mainPic{

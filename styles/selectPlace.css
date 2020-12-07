@@ -1,358 +1,1114 @@
-body {
+@media only screen and (orientation: landscape ) and (min-width:1024px) {
+  body {
   margin: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-}
+  }
 
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #3a6933;
-}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3a6933;
+  }
 
-li {
-display: block;
-color: white;
-text-align: center;
-padding: 20px 30px;
-text-decoration: none;
-}
+  li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  }
 
-.right-content {
+  .right-content {
   float: right;
   font-size: 1.25rem;
-  
-  
-}
 
-#right-content{
-float: right;
-font-size: 1.25rem;
-}
 
-.left-content {
+  }
+
+  #right-content{
+  float: right;
+  font-size: 1.25rem;
+  }
+
+  .left-content {
   float: left;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: default;
-}
+  }
 
-li a {
-display: block;
-color: white;
-text-align: center;
-text-decoration: none;
-}
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  }
 
 
-.right-content:hover {
+  .right-content:hover {
   cursor: pointer;
+  }
+
+  .topic {
+  text-align: center;
+  border: 1px solid black;
+  width: 25%;
+  margin: -10vw auto 0;
+  border-radius: 500px;
+  background-color: white;
+
+  }
+
+  .mainPic {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 80vw;
+  height: 50vw;
+  z-index: -1;
+  }
+
+  .main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .placeForService{
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
+
+  .templateFunc{
+  width: 400px;
+  height: 500px;
+  margin: 50px 5%;
+  border: 1px solid black;
+  border-radius: 3vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+  box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+
+  }
+
+  .insideTemplateFunc{
+  height: 70px;
+  border-radius: 3vw 3vw 0 0 ;
+  background-color: #3a6933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+
+  .setPlacePic{
+  margin-top: 10%;
+  margin-bottom: 23px;
+  width: 70%;
+  height: 65%;
+  }
+
+
+  .textDetailPlace{
+  color: gray;
+  font-size: 1.25rem;
+  }
+
+  .manageBut{
+  background-color: orange;
+  width: 30%;
+  height: 10%;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-top: 10%;
+  }
+
+  button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  }
+
+  .stylePlace{
+  color: white;
+  font-size: 1.5rem;
+  }
+
+  .checkBut{
+  outline: none;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #FFA500;
+  width: 15vw;
+  height: 2.5vw;
+  margin: 10px;
+  border: 1px solid black;
+  font-size: 1.15vw;
+  font-weight: bold;
+
+  }
+
+  .setPlacePic2{
+  margin-top: 3%;
+  width: 60%;
+  height: 100%;
+  }
+
+  .bg-timeModal {
+  width: 100%;
+  height: 250%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  display: none;
+  }
+
+  .container-contents {
+  margin-top: 60%;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  }
+
+  .headBox {
+  display: flex;
+  height: 65px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3a6933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+
+  .close-timerChange {
+  display: block;
+  float: right;
+  margin-top: -60px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+  margin-right: 15px;
+  }
+
+  #dateLabel {
+  display: block;
+  float: left;
+  margin-left: 45px;
+  margin-top: 20px;
+  font-size: 20px;
+
+  }
+
+  .date {
+  margin-top: 18px;
+  font-size: 20px;
+  }
+
+  .date input {
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .date label {
+  margin-right: 10px;
+  }
+
+  #timeLabel {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  }
+
+  .timer {
+  margin-left: 160px;
+  font-size: 20px;
+  }
+
+  .timer input {
+  margin-top: 18px;
+  width: 160px;
+  height: 30xp;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .timer label {
+  margin-right: 10px;
+  }
+
+  #staffLabel {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  }
+  .staff {
+  font-size: 20px;
+  }
+
+  .countStaff {
+  margin-top: 18px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .button {
+  margin: 30px;
+  text-align: center;
+  }
+
+  .button button {
+  margin: 30px 60px;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 20px;
+
+  }
+
+  #fixtime-button {
+  background-color: #FFA500;
+  }
+
+  #cancle {
+  background-color: white;
+  }
+
+  .bg-clientModal {
+  width: 100%;
+  height: 250%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  display: none;
+  }
+
+  .client-contents {
+  margin-top: 60%;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  }
+
+  .headBox {
+  display: flex;
+  height: 65px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3a6933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+
+  .close-client {
+  display: block;
+  float: right;
+  margin-top: -60px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+  }
+
+  .clientLabel {
+  display: block;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+
+  }
+
+  .client-id {
+  margin-top: 18px;
+  margin-left: 7px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  #client-submit {
+  float: right;
+  background-color: #FFA500;
+  }
 }
 
-.topic {
-text-align: center;
-border: 1px solid black;
-width: 25%;
-margin: -10vw auto 0;
-border-radius: 500px;
-background-color: white;
+@media only screen and (min-width:601px) and (max-width:1024px){
+  body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  }
 
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3a6933;
+  }
+
+  li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  }
+
+  .right-content {
+  float: right;
+  font-size: 1.25rem;
+
+
+  }
+
+  #right-content{
+  float: right;
+  font-size: 1.25rem;
+  }
+
+  .left-content {
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: default;
+  }
+
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  }
+
+
+  .right-content:hover {
+  cursor: pointer;
+  }
+
+  .topic {
+  text-align: center;
+  border: 1px solid black;
+  width: 40%;
+  margin: -10vw auto 0;
+  border-radius: 500px;
+  background-color: white;
+
+  }
+
+  .mainPic {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 80vw;
+  height: 50vw;
+  z-index: -1;
+  }
+
+  .main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .placeForService{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  }
+
+  #line {
+  display: none;
+  }
+
+  .templateFunc{
+  width: 400px;
+  height: 500px;
+  margin: 50px 5%;
+  border: 1px solid black;
+  border-radius: 3vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+  box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+
+  }
+
+  .insideTemplateFunc{
+  height: 70px;
+  border-radius: 3vw 3vw 0 0 ;
+  background-color: #3a6933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+
+  .setPlacePic{
+  margin-top: 10%;
+  margin-bottom: 23px;
+  width: 70%;
+  height: 65%;
+  }
+
+
+  .textDetailPlace{
+  color: gray;
+  font-size: 1.25rem;
+  }
+
+  .manageBut{
+  background-color: orange;
+  width: 30%;
+  height: 10%;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-top: 10%;
+  }
+
+  button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  }
+
+  .stylePlace{
+  color: white;
+  font-size: 1.5rem;
+  }
+
+  .checkBut{
+  outline: none;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #FFA500;
+  border: 1px solid black;
+  width: 250px;
+  height: 50px;
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  }
+
+  .setPlacePic2{
+  margin-top: 3%;
+  width: 60%;
+  height: 100%;
+  }
+
+  .bg-timeModal {
+  width: 100%;
+  height: 250%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  display: none;
+  }
+
+  .container-contents {
+  margin-top: 60%;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  }
+
+  .headBox {
+  display: flex;
+  height: 65px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3a6933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+
+  .close-timerChange {
+  display: block;
+  float: right;
+  margin-top: -60px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+  }
+
+  #dateLabel {
+  display: block;
+  float: left;
+  margin-left: 45px;
+  margin-top: 20px;
+  font-size: 20px;
+
+  }
+
+  .date {
+  margin-top: 18px;
+  font-size: 20px;
+  }
+
+  .date input {
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .date label {
+  margin-right: 10px;
+  }
+
+  #timeLabel {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  }
+
+  .timer {
+  margin-left: 160px;
+  font-size: 20px;
+  }
+
+  .timer input {
+  margin-top: 18px;
+  width: 160px;
+  height: 30xp;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .timer label {
+  margin-right: 10px;
+  }
+
+  #staffLabel {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  }
+  .staff {
+  font-size: 20px;
+  }
+
+  .countStaff {
+  margin-top: 18px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .button {
+  margin: 30px;
+  text-align: center;
+  }
+
+  .button button {
+  margin: 30px 60px;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 20px;
+
+  }
+
+  #submit {
+  background-color: #FFA500;
+  }
+
+  #cancle {
+  background-color: white;
+  }
+
+  .bg-clientModal {
+  width: 100%;
+  height: 250%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  display: none;
+  }
+
+  .client-contents {
+  margin-top: 60%;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  }
+
+  .headBox {
+  display: flex;
+  height: 65px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3a6933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+
+  .close-client {
+  display: block;
+  float: right;
+  margin-top: -60px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+  }
+
+  .clientLabel {
+  display: block;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+
+  }
+
+  .client-id {
+  margin-top: 18px;
+  margin-left: 7px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  #client-submit {
+  float: right;
+  background-color: #FFA500;
+  }
 }
 
-.mainPic {
-top: 0;
-left: 0;
-position: relative;
-width: 80vw;
-height: 50vw;
-z-index: -1;
-}
+@media only screen and (max-width:600px) {
+  body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  }
 
-.main-content {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3a6933;
+  }
 
-.placeForService{
-font-size: 1.2rem;
-font-weight: bold;
-}
+  li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 5px;
+  text-decoration: none;
+  }
 
-.templateFunc{
-width: 400px;
-height: 500px;
-margin: 50px 5%;
-border: 1px solid black;
-border-radius: 3vw;
-background-color: white;
-display: flex;
-flex-direction: column;
--webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
--moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
-
-}
-
-.insideTemplateFunc{
-height: 70px;
-border-radius: 3vw 3vw 0 0 ;
-background-color: #3a6933;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-.setPlacePic{
-margin-top: 10%;
-margin-bottom: 23px;
-width: 70%;
-height: 65%;
-}
+  .right-content {
+  margin: 3px 4px;
+  float: right;
+  font-size: 1rem;
 
 
-.textDetailPlace{
-color: gray;
-font-size: 1.25rem;
-}
+  }
 
-.manageBut{
-background-color: orange;
-width: 30%;
-height: 10%;
-font-size: 1rem;
-border-radius: 20px;
-margin-top: 10%;
-}
+  #right-content{
+  float: right;
+  font-size: 1.2rem;
+  }
 
-button:hover {
-cursor: pointer;
-opacity: 0.5;
-}
+  .left-content {
+  float: left;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: default;
+  }
 
-.stylePlace{
-color: white;
-font-size: 1.5rem;
-}
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  }
 
-.checkBut{
-border-radius: 2vw;
-outline: none;
-background-color: white;
-width: 15vw;
-height: 2.5vw;
-margin: 10px;
-border: 1px solid black;
-font-size: 1rem;
-margin-left: 7%;
-font-weight: bold;
 
-}
+  .right-content:hover {
+  cursor: pointer;
+  }
 
-.setPlacePic2{
-margin-top: 3%;
-width: 60%;
-height: 100%;
-}
+  .topic {
+  text-align: center;
+  border: 1px solid black;
+  width: 75%;
+  margin:  15px auto;
+  border-radius: 500px;
+  background-color: white;
 
-.bg-timeModal {
-width: 100%;
-height: 250%;
-background-color: rgb(0, 0, 0, 0.7);
-position: absolute;
-top: 0;
-display: flex;
-justify-content: center;
-display: none;
-}
+  }
 
-.container-contents {
-margin-top: 60%;
-width: 500px;
-height: 400px;
-background-color: white;
-border-radius: 20px;
-}
+  .mainPic {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 80vw;
+  height: 50vw;
+  z-index: -1;
+  display:none;
+  }
 
-.headBox {
-display: flex;
-height: 65px;
-margin-top: -30px;
-justify-content: center;
-align-items: center;
-font-size: 30px;
-color: white;
-background-color: #3a6933;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
+  .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
 
-.close-timerChange {
-display: block;
-float: right;
-margin-top: -60px;
-font-size: 42px;
-transform: rotate(45deg);
-cursor: pointer;
-color: white;
-}
+  .placeForService{
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
 
-#dateLabel {
-display: block;
-float: left;
-margin-left: 45px;
-margin-top: 20px;
-font-size: 20px;
+  #line {
+  display: none;
+  }
 
-}
+  .templateFunc{
+  width: 80%;
+  height: 200px;
+  margin: 15px 0px;
+  border: 1px solid black;
+  border-radius: 3vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
+  box-shadow: 9px 7px 6px 0px rgba(0,0,0,0.42);
 
-.date {
-margin-top: 18px;
-font-size: 20px;
-}
+  }
 
-.date input {
-width: 160px;
-height: 30px;
-text-align: center;
-font-size: 18px;
-}
+  .insideTemplateFunc{
+  height: 50px;
+  border-radius: 3vw 3vw 0 0 ;
+  background-color: #3a6933;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.date label {
-margin-right: 10px;
-}
+  }
 
-#timeLabel {
-display: block;
-float: left;
-margin-left: 30px;
-margin-top: 20px;
-font-size: 20px;
-}
+  .setPlacePic{
+  margin-top: 10%;
+  margin-bottom: 23px;
+  width: 70%;
+  height: 65%;
+  display: none;
+  }
 
-.timer {
-margin-left: 160px;
-font-size: 20px;
-}
 
-.timer input {
-margin-top: 18px;
-width: 160px;
-height: 30xp;
-text-align: center;
-font-size: 18px;
-}
+  .textDetailPlace{
+  color: gray;
+  font-size: 1.25rem;
+  }
 
-.timer label {
-margin-right: 10px;
-}
+  .manageBut{
+  background-color: orange;
+  width: 30%;
+  height: 10%;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-top: 10%;
+  }
 
-#staffLabel {
-display: block;
-float: left;
-margin-left: 30px;
-margin-top: 20px;
-font-size: 20px;
-}
-.staff {
-font-size: 20px;
-}
+  button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  }
 
-.countStaff {
-margin-top: 18px;
-width: 100px;
-height: 30px;
-text-align: center;
-font-size: 18px;
-}
+  .stylePlace{
+  color: white;
+  font-size: 1.5rem;
+  }
 
-.button {
-margin: 30px;
-text-align: center;
-}
+  .checkBut{
+  outline: none;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #FFA500;
+  border: 1px solid black;
+  width: 160px;
+  height: 30px;
+  margin: 20px 0px;
+  font-size: 1rem;
+  font-weight: bold;
 
-.button button {
-margin: 30px 60px;
-width: 80px;
-height: 30px;
-font-size: 18px;
-border-radius: 20px;
+  }
 
-}
+  .setPlacePic2{
+  margin-top: 3%;
+  width: 60%;
+  height: 100%;
+  display: none;
+  }
 
-#submit {
-background-color: #FFA500;
-}
+  .bg-timeModal {
+  width: 100%;
+  height: 250%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  display: none;
+  }
 
-#cancle {
-background-color: white;
-}
+  .container-contents {
+  margin-top: 60%;
+  width: 90%;
+  height: 350px;
+  background-color: white;
+  border-radius: 20px;
+  }
 
-.bg-clientModal {
-width: 100%;
-height: 250%;
-background-color: rgb(0, 0, 0, 0.7);
-position: absolute;
-top: 0;
-display: flex;
-justify-content: center;
-display: none;
-}
+  .headBox {
+  display: flex;
+  height: 65px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3a6933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
 
-.client-contents {
-margin-top: 60%;
-width: 500px;
-height: 400px;
-background-color: white;
-border-radius: 20px;
-}
+  .close-timerChange {
+  display: block;
+  float: right;
+  margin-top: -60px;
+  font-size: 36px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+  margin-right: 7px;
+  }
 
-.headBox {
-display: flex;
-height: 65px;
-margin-top: -30px;
-justify-content: center;
-align-items: center;
-font-size: 30px;
-color: white;
-background-color: #3a6933;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
+  #dateLabel {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  padding-right: 160px;
+  margin-top: 20px;
+  font-size: 18px;
 
-.close-client {
-display: block;
-float: right;
-margin-top: -60px;
-font-size: 42px;
-transform: rotate(45deg);
-cursor: pointer;
-color: white;
-}
+  }
 
-.clientLabel {
-display: block;
-float: left;
-margin-left: 50px;
-margin-top: 20px;
-font-size: 20px;
+  .date {
+  margin-top: 20px;
+  font-size: 16px;
+  }
 
-}
+  .date input {
+  margin-top: 10px;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  }
 
-.client-id {
-margin-top: 18px;
-margin-left: 7px;
-width: 180px;
-height: 30px;
-text-align: center;
-font-size: 18px;
-}
+  .date label {
+  margin-left: 50px;
+  margin-right: 10px;
+  }
 
-#client-submit {
-float: right;
-background-color: #FFA500;
+  #timeLabel {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  }
+
+  .timer {
+    display: block;
+    float: left;
+    margin-top: 0px;
+  margin-left: 0px;
+  font-size: 18px;
+  }
+
+  .timer input {
+  margin-top: 10px;
+  margin-right: 0px;
+  width: 160px;
+  height: 30xp;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .timer label {
+  margin-left: 10px;
+  margin-right: 1px;
+  }
+
+  #time2 {
+  margin-left: 75px;
+  margin-right: 0px;
+  }
+
+  #staffLabel {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  }
+  .staff {
+  font-size: 18px;
+  }
+
+  .countStaff {
+  margin-top: 18px;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  .button {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px;
+  text-align: center;
+  }
+
+  .button button {
+  margin: 20px 30px;
+  width: 80px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 20px;
+
+  }
+
+  #fixtime-button {
+  background-color: #FFA500;
+  }
+
+  #cancle {
+  background-color: white;
+  }
+
+  .bg-clientModal {
+  width: 100%;
+  height: 250%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  display: none;
+  }
+
+  .client-contents {
+  margin-top: 60%;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  }
+
+  .headBox {
+  display: flex;
+  height: 65px;
+  margin-top: -30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #3a6933;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  }
+
+  .close-client {
+  display: block;
+  float: right;
+  margin-top: -60px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: white;
+  }
+
+  .clientLabel {
+  display: block;
+  float: left;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+
+  }
+
+  .client-id {
+  margin-top: 18px;
+  margin-left: 7px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  }
+
+  #client-submit {
+  float: right;
+  background-color: #FFA500;
+  }
 }
