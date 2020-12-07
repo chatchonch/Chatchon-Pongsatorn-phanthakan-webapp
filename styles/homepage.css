@@ -330,6 +330,7 @@ flex-direction: column;
 display: flex;
 }
 
+<<<<<<< HEAD
 }
 
 @media only screen and (min-width:601px) and (max-width:1024px){
@@ -995,3 +996,6 @@ display: flex;
     }
     
     }
+=======
+
+>>>>>>> 0b4bbe1ab6dfd439cf16bc9b2b60aeacd089642d
