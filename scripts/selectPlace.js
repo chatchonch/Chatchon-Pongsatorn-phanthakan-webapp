@@ -56,6 +56,7 @@ window.onload = function() {
     submitBtn.addEventListener('click', function() {
       setData();
       addDataToFireBase();
+      alert("Setting Complete")
 })
 
     clearBtn.addEventListener('click', function() {

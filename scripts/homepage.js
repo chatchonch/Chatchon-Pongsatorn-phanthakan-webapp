@@ -2,6 +2,7 @@ window.onload = function() {
     let appointmentBtn = document.getElementById('checkAppointment');
     let text = document.getElementById('text_appointment');
     let popupBtn = document.getElementById('submitPopup');
+    let cancelBtn = document.getElementById('cancel_appointment');
     var firebaseConfig = {
         apiKey: "AIzaSyBsm2OONg2-y0A53i0mhDrGaBv_EzNksRE",
         authDomain: "myprojectpcu.firebaseapp.com",
@@ -21,9 +22,11 @@ window.onload = function() {
             console.log("Document data:", doc.data());
             text.innerHTML = `${doc.data().firstname} ${doc.data().lastname} นัดตรวจที่ ${doc.data().location} วันที่ ${doc.data().dateAppointment}
             เวลา ${doc.data().timeAppointment}`;
+            document.querySelector(".cancel_appointment").style.display = "flex";
         } else {
           // doc.data() will be undefined in this case
           console.log("No such document!");
+          text.innerHTML = "";
         }
     }).catch(function(error) {
         console.log("Error getting document:", error);
@@ -54,4 +57,16 @@ window.onload = function() {
           }
           );
     })
+
+    cancelBtn.addEventListener('click', function() {
+        db.collection("สถานบริการที่ 1").doc("1409901234567").delete()
+        .then(function() {
+        console.log("Document successfully deleted!");
+        text.innerHTML = "";
+        document.querySelector(".cancel_appointment").style.display = "none";
+        })
+        .catch(function(error) {
+            console.error("Error adding document: ", error);
+        })
+        })
 }
